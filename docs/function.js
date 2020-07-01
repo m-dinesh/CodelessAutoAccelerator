@@ -156,7 +156,7 @@ function sendEmail() {
         else
         {
             console.log("Invalid Email if provided");
-            document.getElementById("mailId").placeholder ="invalid email id format";
+            document.getElementById("mailId").placeholder ="Invalid email address";
         }
  
         document.getElementById("mailId").value = "";
@@ -171,11 +171,11 @@ function sendEmail() {
     if( phoneNumber.length < 7 || phoneNumber.length > 20 )
     {
         sendParametersValidation = false;
-        console.log(" INvalid Phone number pattern");
+        console.log(" Invalid phone number pattern");
         ssendParametersValidation = false;
         document.getElementById("phone").classList.add('input_error');
         document.getElementById("phone").classList.remove('input_noerror');
-        document.getElementById("phone").placeholder ="Invalid Phone Number ( 7 to 20 digits only ) ";
+        document.getElementById("phone").placeholder ="Invalid phone number(7 to 20 digits only) ";
         document.getElementById("phone").value = "";
     } 
 
