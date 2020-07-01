@@ -45,7 +45,7 @@ var pJS = function(tag_id, params){
           color: '#ff0000'
         },
         polygon: {
-          nb_sides: 5
+          nb_sides: 20
         },
         image: {
           src: '',
@@ -54,7 +54,7 @@ var pJS = function(tag_id, params){
         }
       },
       opacity: {
-        value: 0.5,
+        value: 0.4,
         random: true,
         anim: {
           enable: false,
@@ -64,12 +64,12 @@ var pJS = function(tag_id, params){
         }
       },
       size: {
-        value: 100,
+        value: 40,
         random: true,
         anim: {
           enable: false,
           speed: 20,
-          size_min: 20,
+          size_min: 10,
           sync: false
         }
       },
