@@ -1,0 +1,62 @@
+
+<svg width="112" height="112" viewBox="0 0 112 112" fill="none" xmlns="http://www.w3.org/2000/svg">
+	<style>
+		   .translateLeft
+   {
+      animation: translate-left 4s ease-in-out infinite;
+      }  
+   @keyframes translate-left
+   {
+      0%    { transform : translate(-2vh,0vh); }
+      50%   {transform : translate(4vw,-4vh); }
+      100%  {transform : translate(-2vh,0vh); }    
+   }
+   .floating-island {
+              animation: floatAnim 4	s ease-in-out infinite;
+        }
+       @keyframes floatAnim {
+              0% {
+                transform: translate(0vh,0vh);
+              }
+              50% {
+                transform: translate(0vh,-3vh);
+              }
+              100% {
+                transform: translate(0vh,0vh);
+              }
+            }
+         .orbitt
+   {  
+      stroke-dasharray: 400;
+      stroke-dashoffset: 400;
+
+      animation: orbittr 5s ease-in-out infinite;
+      
+   }
+
+   @keyframes orbittr{
+      0% {  stroke-dashoffset: 400; }
+      100% { stroke-dashoffset: 0; }
+   }
+
+	</style>
+<g id="Layer 2">
+<g id="Layer 1">
+<path id="centercircle" d="M55.7 83.07C70.816 83.07 83.07 70.816 83.07 55.7C83.07 40.584 70.816 28.33 55.7 28.33C40.584 28.33 28.33 40.584 28.33 55.7C28.33 70.816 40.584 83.07 55.7 83.07Z" fill="url(#paint0_linear)"/>
+<path id="Hill" class="floating-island" d="M45.38 70.07C45.38 70.2168 45.4376 70.3578 45.5405 70.4625C45.6433 70.5672 45.7832 70.6274 45.93 70.63H70.14C70.2135 70.63 70.2864 70.6155 70.3543 70.5874C70.4222 70.5592 70.484 70.518 70.536 70.466C70.588 70.414 70.6292 70.3522 70.6574 70.2843C70.6855 70.2164 70.7 70.1435 70.7 70.07V45.67C70.7 45.36 70.59 45.34 70.47 45.62L67.23 52.74C67.1591 52.8818 67.0461 52.9982 66.9065 53.0734C66.7668 53.1486 66.6074 53.1788 66.45 53.16L63.06 52.61C62.9003 52.5896 62.7381 52.6155 62.5928 52.6847C62.4474 52.7538 62.3249 52.8633 62.24 53L56.3 63.26C56.2117 63.3958 56.0872 63.5043 55.9406 63.5732C55.7939 63.6421 55.6309 63.6687 55.47 63.65L52 63.12C51.6456 63.075 51.2875 63.1681 51 63.38L45.82 67.65C45.5636 67.8816 45.409 68.205 45.39 68.55V70.07H45.38Z" fill="white"/>
+<path id="Arrow" class="translateLeft" d="M41.58 56.66L43.58 58.66C43.711 58.7918 43.8668 58.8964 44.0385 58.9678C44.2101 59.0392 44.3941 59.076 44.58 59.076C44.7659 59.076 44.9499 59.0392 45.1215 58.9678C45.2931 58.8964 45.449 58.7918 45.58 58.66L55 49.17L56.46 50.63C57.01 51.18 57.46 51 57.46 50.22V44.15C57.46 43.7787 57.3125 43.4226 57.0499 43.16C56.7874 42.8975 56.4313 42.75 56.06 42.75H50C49.23 42.75 49 43.19 49.59 43.75L51.06 45.21L41.58 54.69C41.4503 54.8191 41.3474 54.9726 41.2771 55.1417C41.2069 55.3107 41.1707 55.492 41.1707 55.675C41.1707 55.858 41.2069 56.0393 41.2771 56.2083C41.3474 56.3774 41.4503 56.5308 41.58 56.66V56.66Z" fill="white"/>
+<path id="OrbitPath"  d="M55.7 103.7C82.2097 103.7 103.7 82.2097 103.7 55.7C103.7 29.1903 82.2097 7.7 55.7 7.7C29.1903 7.7 7.7 29.1903 7.7 55.7C7.7 82.2097 29.1903 103.7 55.7 103.7Z" stroke="#FFE9E9" stroke-width="15.39" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Orbit" class="orbitt" d="M55.7 103.7C44.3462 103.7 33.3601 99.6747 24.6934 92.3402C16.0266 85.0057 10.2403 74.8365 8.36246 63.6391C6.48457 52.4417 8.63667 40.9412 14.4364 31.1805C20.2362 21.4198 29.3081 14.031 40.0406 10.3267C50.773 6.62231 62.4712 6.84227 73.0568 10.9475C83.6424 15.0527 92.4301 22.7773 97.8589 32.7491C103.288 42.7209 105.006 54.2942 102.708 65.4131C100.411 76.532 94.2463 86.4765 85.31 93.48" stroke="url(#paint1_linear)" stroke-width="15.39" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear" x1="28.33" y1="55.7" x2="83.06" y2="55.7" gradientUnits="userSpaceOnUse">
+<stop stop-color="#D23274"/>
+<stop offset="1" stop-color="#F24A37"/>
+</linearGradient>
+<linearGradient id="paint1_linear" x1="16.31" y1="95.08" x2="95.08" y2="16.31" gradientUnits="userSpaceOnUse">
+<stop stop-color="#F26B1F"/>
+<stop offset="1" stop-color="#D23274"/>
+</linearGradient>
+</defs>
+</svg>
