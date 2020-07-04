@@ -1,0 +1,1203 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="icon" href="./asserts/webicon_transparent.ico">
+    <title>Codeless Automation Accelerator</title>
+    <link href="./styles.css" type="text/css" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Muli&family=Titillium+Web&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Exo:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+    <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
+</head>
+
+<body id="mybody">
+    <!-- FOr preloading Stuff -->
+    <!--CSS Spinner-->
+<div class="spinner-wrapper">
+ <img src="./asserts/preload.svg" />
+    </div>
+
+    <!-- End Preloading -->
+    <div id="main-container">
+        <div class="sub-container">
+            <div class="section1">
+                <img class="desk bgImg" src="./asserts/1_BG@web.png" />
+                <img class="mobile m_bgImg" src="./asserts/m_1_BG.png" />
+                <div class="content">
+                    <div class="navbar">
+                        <div class="logo">
+                            <img id="color-img" src="./asserts/0_Logo_Color@web.svg" />
+                            <img id="white-img" src="./asserts/0_Logo_White@web.svg" />
+                            <div id="nav-title" class="title">
+                                <a href="#main-container"><b>CODELESS AUTOMATION ACCELERATOR</b></a>
+                            </div>
+                        </div>
+                        <div class="right-content desk">
+                            <ul class="nav-items">
+                                <li class="item">
+                                    <a data-page="section2" href="#" onclick="$('html, body').animate({ scrollTop: $('#section2').offset().top  - 50}, 1000);
+                                    return false;">WHY CODELESS ACCELERATOR</a>
+                                </li>
+                                <li class="item">
+                                    <a  data-page="lower"  href="#" onclick="$('html, body').animate({ scrollTop: $('#modules').offset().top + 100 }, 1000);
+                                    return false;">MODULES</a>
+                                </li>
+                                <li class="item">
+                                    <a id="ttgg" data-page="section5" href="#" onclick="$('html, body').animate({ scrollTop: $('#devops').offset().top +100}, 1000);
+                                    return false;">DEVOPS</a>
+                                </li>
+                                <li class="item">
+                                    <a data-page="section6" href="#" onclick="$('html, body').animate({ scrollTop: $('#benifits').offset().top }, 1000);
+                                    return false;">BENEFITS</a>
+                                </li>       
+                               <li class="item">
+                                    <a data-page="section7" href="#" onclick="$('html, body').animate({ scrollTop: $('#contactUs').offset().top }, 'slow');
+                                    return false;">CONTACT US</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="mobile right-content">
+                            <img id ="whiteButton" src="./asserts/m_0_Menu_Button_White.png" onclick="hamburger()"/>
+                            <img id ="colorButton" src="./asserts/m_0_Menu_Button_Color.png" onclick="hamburger()"/>
+                        </div>
+                        <div id="hamburgerList" class="hamburgerList mobile">
+                            <img src="./asserts/m_0_Dropdown.png" />
+                            <ul class="hamburger-nav-items">
+                                <li class="item">
+                                    <a data-page="section2" href="#" onclick="$('html, body').animate({ scrollTop: $('#section2').offset().top - 40}, 1000);
+                                    document.getElementById('hamburgerList').style.display = 'none'; hambugerOn = true;console.log('LOGGING', hambugerOn);testfn();
+                                    return false;">WHY CODELESS ACCELERATOR</a>
+                                </li>
+                                <li class="item">
+                                    <a  data-page="lower"  href="#" onclick="$('html, body').animate({ scrollTop: $('#modules').offset().top + 50 }, 1000);
+                                    document.getElementById('hamburgerList').style.display = 'none';hambugerOn = true; console.log(hambugerOn);
+                                    return false;">MODULES</a>
+                                </li>
+                                <li class="item">
+                                    <a id="ttgg" data-page="section5" href="#" onclick="$('html, body').animate({ scrollTop: $('#devops').offset().top +100}, 1000);
+                                    document.getElementById('hamburgerList').style.display = 'none';hambugerOn = true;console.log(hambugerOn);
+                                    return false;">DEVOPS</a>
+                                </li>
+                                <li class="item">
+                                    <a data-page="section6" href="#" onclick="$('html, body').animate({ scrollTop: $('#benifits').offset().top }, 1000);
+                                    document.getElementById('hamburgerList').style.display = 'none';hambugerOn = true;console.log(hambugerOn);
+                                    return false;">BENEFITS</a>
+                                </li>       
+                               <li class="item">
+                                    <a data-page="section7" href="#" onclick="$('html, body').animate({ scrollTop: $('#contactUs').offset().top }, 'slow');
+                                    document.getElementById('hamburgerList').style.display = 'none';hambugerOn = true;console.log(hambugerOn);
+                                    return false;">CONTACT US</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="firstSession heading">
+                        <b>Codeless Automation Accelerator</b>
+                    </div>
+                    <div class="icon">
+                        <img src="./asserts/1_Hand_New.svg" />            
+                    </div>
+                </div>
+                <div id="particles-js"></div>
+                <div class="left-circle"></div>
+                <div class="right-circle"></div>
+            </div>
+            <div id="section2" class="section2">
+                <div class="sec2-heading1">
+                    <h3><b>Solving your unsolved problems</b></h3>
+                </div>
+                <div class="sec2-container">
+                    <div data-aos="fade-right" class="left-session list">
+                        <ul class="solutionList">
+                            <li class="points">
+                                Utilizes the invaluable knowledge of your workforce to define automation tests.
+                            </li>
+                            <li class="points">
+                                Manage your automation flow and data as readable document rather than managing the code.
+                            </li>
+                            <li class="points">
+                            Use single language to define Web | Desktop | Mainframe | Database |  Mobile | Performance | Batch | API Automation and so on.
+                            </li>
+                            <li class="points">
+                                Test your new features & releases automatically without human intervention and make it
+                                easy for your teams to adopt.
+                            </li>
+                            <li class="points">
+                                Freedom to start automation way before your application is ready for test.
+                            </li>
+                            <li class="points">
+                                Defines automation as configuration rather than coding.
+                            </li>
+                        </ul>
+                    </div>
+                    <div data-aos="fade-left" class="right-session list">
+                        <img src="./asserts/2_Art@web_new.svg" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="section3">
+                <img class="desk sec3-backimg1" src="./asserts/3_BG@web.png" />
+                <img class="mobile sec3-backimg1" src="./asserts/m_3_BG.svg" />
+                <div class="sec3-img2">
+                    <img class="desk sec3-backimg2" src="./asserts/4_BG@web.png" />
+                    <img class="mobile sec3-backimg2" src="./asserts/m_4_BG.svg" />
+                </div>
+                <div class="upper">
+                    <div class="sec3-heading">
+                        <h3 class="sec3-sub-heading list"><b>Intelligent Enterprise Codeless Automation
+                                Accelerator</b></h3>
+                    </div>
+                    <div class="sec3-content">
+                        <div data-aos="fade-right" class="sec3-img">
+                            <img src="./asserts/3_Art.svg" />
+                        </div>
+                        <div data-aos="fade-left" id="sec2-content1" class="sec3-text">
+                            <p>
+                                Software Quality Assurance, Test automation, Performance testing & Security testing continues to be a challenge as organisations look to offer digital services, move to more modular architectures and adopt Agile & DevOps practices. The Codeless Automation Accelerator is an automation accelerator successfully built and rolled out into complex and strategic organisations and has proven to be highly beneficial. 
+                            </br></br>
+                                In addition to reducing the cost to serve, it also enables people with legacy testing skills to author automated test scripts without the need to write code; thereby helping us rotate manual testing workforce.
+                            </br></br>
+                                Based on the demand we have seen in Australia, New Zealand and Japan in leveraging this accelerator, it can then be leveraged to automate platforms such as SAP, Salesforce, PEGA, Oracle, Ncino, etc.
+                            </p>
+                            <div class="learnMore">
+                                <button onclick="learnMore()">LEARN MORE</button>
+                            </div>
+                        </div>
+                        <div data-aos="fade-left" id="sec2-content2" class="sec3-text">
+                            <p>
+                                The key benefits of the accelerator are:
+                                <ul class="sec3-list">
+                                    <li>Ease of implementation.</li>
+                                    <li> Automates Web GUI, API, Database, Batch, Mainframe, Mobile/Tablets, Batch/Shh, Accessibility.</li>
+                                    <li> Use as a performance testing accelerator or security testing accelerator.</li>
+                                    <li>Reduces our cost & risk to serve, and the total cost of ownership for our clients.</li> 
+                                    <li> Leverages people with legacy testing skills to deliver in the NEW.</li>
+                                    <li> Modern modular architecture which can be used with containerization and cloud native automation testing including autoscaling and containerization orchestration such as Elastic Kubernetes service (EKS) and Elastic Container Service (ECS). </li>
+                                    <li> AI and ML algorithms empowering users with tools to get value and insights from their Elasticsearch data, and view machine learning as a natural extension to the search and analytics capabilities in Elasticsearch providing “Time Series Anomaly Detection” capabilities using unsupervised machine learning.</li>
+                                    <li>Already built integration adaptors (via APIs) with Jira, Confluence, ALM, QTest, GIT service provides and e-mailer services.</li>
+                                </ul>
+                            </p>
+                            <div class="learnMore">
+                                <button onclick="mainContent()">BACK</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="modules" class="lower">
+                    <div class="modules">
+                        <h3><b>MODULES</b></h3>
+                    </div>
+                    <div class="modules-img" data-aos="zoom-in-up">
+                        <img src="./asserts/4_BG_Circles@web.svg" />
+                        <!-- <img src="./asserts/modules_4.svg" />  -->
+                        <svg width="721" height="720" viewBox="0 0 721 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g id="4_Overall@web 1" clip-path="url(#clip0)">
+                            <g id="Group">
+                            <g id="Layer 1 2">
+                            <g id="OrbitBackground" opacity="0.25">
+                            <path id="Vector" opacity="0.92" d="M138.24 475.385C100.84 475.385 77.24 466.885 70.44 450.485C61.34 428.585 83.64 395.385 133.24 356.985C182.44 318.885 252.74 279.985 331.24 247.585C409.74 215.185 486.84 193.085 548.64 185.385C610.84 177.585 650.04 185.385 659.14 207.285C668.24 229.185 645.94 262.385 596.34 300.785C547.14 338.885 476.84 377.785 398.34 410.185C319.84 442.585 242.64 464.685 180.94 472.485C166.74 474.285 152.54 475.285 138.24 475.385ZM591.64 184.385C577.34 184.485 563.04 185.485 548.84 187.385C487.24 195.085 410.24 217.185 331.94 249.585C253.64 281.985 183.54 320.685 134.44 358.685C85.64 396.485 63.64 428.885 72.34 449.885C81.04 470.885 119.54 478.185 180.74 470.585C242.34 462.885 319.34 440.785 397.64 408.385C475.94 375.985 546.04 337.285 595.14 299.285C643.94 261.485 665.94 229.185 657.24 208.185C650.84 192.485 628.04 184.385 591.64 184.385Z" fill="white"></path>
+                            <path id="Vector_2" opacity="0.92" d="M252.84 624.785C249.24 624.785 245.74 624.185 242.44 622.785C220.54 613.685 212.84 574.385 220.84 512.285C228.74 450.485 251.14 373.385 283.74 294.985C316.34 216.585 355.44 146.385 393.74 97.3848C432.24 47.9848 465.54 25.7848 487.44 34.8848C509.34 43.9848 516.94 83.2848 509.04 145.385C501.14 207.185 478.74 284.285 446.14 362.685C413.54 441.085 374.44 511.185 336.14 560.385C303.24 602.385 274.24 624.785 252.84 624.785ZM476.94 34.7848C456.24 34.7848 427.84 56.8848 395.34 98.5848C357.14 147.585 318.24 217.585 285.64 295.785C253.04 373.985 230.74 450.985 222.84 512.585C215.04 573.785 222.24 612.285 243.24 620.985C246.34 622.285 249.64 622.885 252.94 622.885C273.64 622.885 302.04 600.785 334.54 559.085C372.74 510.085 411.64 440.085 444.24 361.885C476.84 283.685 499.14 206.685 507.04 145.185C514.84 83.9848 507.64 45.4848 486.64 36.7848C483.64 35.3848 480.34 34.7848 476.94 34.7848Z" fill="white"></path>
+                            <path id="Vector_3" opacity="0.92" d="M475.54 625.185C454.14 625.185 425.14 602.685 392.44 560.185C354.44 510.885 315.84 440.485 283.54 361.885C251.24 283.285 229.54 206.085 221.94 144.285C214.34 82.0848 222.24 42.8848 244.14 33.8848C266.04 24.8848 299.24 47.2848 337.44 96.8848C375.44 146.185 414.04 216.585 446.34 295.185C478.64 373.785 500.44 451.085 508.04 512.785C515.64 574.985 507.74 614.185 485.84 623.185C482.54 624.585 479.04 625.185 475.54 625.185ZM254.44 33.8848C251.14 33.8848 247.94 34.4848 244.84 35.6848C223.84 44.2848 216.34 82.7848 223.84 143.985C231.34 205.585 253.24 282.685 285.34 361.085C317.44 439.485 356.04 509.685 393.94 558.885C426.24 600.885 454.64 623.085 475.34 623.085C478.64 623.085 481.84 622.485 484.94 621.285C505.94 612.685 513.44 574.185 505.94 512.985C498.44 451.385 476.54 374.285 444.44 295.885C412.34 217.485 373.74 147.285 335.84 98.1848C303.54 56.1848 275.14 33.8848 254.44 33.8848Z" fill="white"></path>
+                            <g id="Vector_4" opacity="0.92" filter="url(#filter0_d)">
+                            <mask id="path-4-inside-1" fill="white">
+                            <path d="M591.94 476.185C577.14 476.085 562.44 474.985 547.84 472.985C486.14 464.885 409.04 442.285 330.74 409.485C252.44 376.685 182.44 337.285 133.44 298.885C84.14 260.185 62.04 226.885 71.24 204.985C80.44 183.085 119.74 175.585 181.84 183.685C243.54 191.785 320.64 214.385 398.94 247.285C477.24 280.185 547.24 319.385 596.24 357.885C645.54 396.585 667.64 429.885 658.44 451.785C651.64 467.885 628.54 476.185 591.94 476.185ZM137.34 182.585C101.84 182.585 79.44 190.485 73.04 205.885C64.24 226.885 86.14 259.385 134.64 297.385C183.54 335.685 253.44 374.885 331.54 407.685C409.64 440.485 486.54 462.985 548.14 471.085C609.34 479.085 647.84 471.985 656.64 451.085C665.44 430.185 643.54 397.585 595.04 359.585C546.24 321.285 476.24 282.085 398.14 249.285C320.04 216.485 243.14 193.985 181.54 185.885C166.84 183.785 152.14 182.685 137.34 182.585Z"></path>
+                            </mask>
+                            <path d="M591.94 476.185C577.14 476.085 562.44 474.985 547.84 472.985C486.14 464.885 409.04 442.285 330.74 409.485C252.44 376.685 182.44 337.285 133.44 298.885C84.14 260.185 62.04 226.885 71.24 204.985C80.44 183.085 119.74 175.585 181.84 183.685C243.54 191.785 320.64 214.385 398.94 247.285C477.24 280.185 547.24 319.385 596.24 357.885C645.54 396.585 667.64 429.885 658.44 451.785C651.64 467.885 628.54 476.185 591.94 476.185ZM137.34 182.585C101.84 182.585 79.44 190.485 73.04 205.885C64.24 226.885 86.14 259.385 134.64 297.385C183.54 335.685 253.44 374.885 331.54 407.685C409.64 440.485 486.54 462.985 548.14 471.085C609.34 479.085 647.84 471.985 656.64 451.085C665.44 430.185 643.54 397.585 595.04 359.585C546.24 321.285 476.24 282.085 398.14 249.285C320.04 216.485 243.14 193.985 181.54 185.885C166.84 183.785 152.14 182.685 137.34 182.585Z" fill="white"></path>
+                            <path d="M591.94 476.185C577.14 476.085 562.44 474.985 547.84 472.985C486.14 464.885 409.04 442.285 330.74 409.485C252.44 376.685 182.44 337.285 133.44 298.885C84.14 260.185 62.04 226.885 71.24 204.985C80.44 183.085 119.74 175.585 181.84 183.685C243.54 191.785 320.64 214.385 398.94 247.285C477.24 280.185 547.24 319.385 596.24 357.885C645.54 396.585 667.64 429.885 658.44 451.785C651.64 467.885 628.54 476.185 591.94 476.185ZM137.34 182.585C101.84 182.585 79.44 190.485 73.04 205.885C64.24 226.885 86.14 259.385 134.64 297.385C183.54 335.685 253.44 374.885 331.54 407.685C409.64 440.485 486.54 462.985 548.14 471.085C609.34 479.085 647.84 471.985 656.64 451.085C665.44 430.185 643.54 397.585 595.04 359.585C546.24 321.285 476.24 282.085 398.14 249.285C320.04 216.485 243.14 193.985 181.54 185.885C166.84 183.785 152.14 182.685 137.34 182.585Z" stroke="white" stroke-width="10" mask="url(#path-4-inside-1)"></path>
+                            </g>
+                            </g>
+                            <g id="CenterCircle"  style="cursor: pointer;" onclick="moduleCenterButton(this)">
+                            <path id="modulesSvgMainCircleStroke" class="modulesSvgMainCircleStroke" d="M364.74 207.185C431.94 207.185 486.44 261.685 486.44 328.985C486.44 396.285 431.94 450.685 364.64 450.685C297.44 450.685 242.94 396.185 242.94 328.885C242.94 296.585 255.74 265.585 278.64 242.785C301.44 219.885 332.44 207.085 364.74 207.185ZM364.74 203.185C295.34 203.185 238.94 259.485 238.94 328.985C238.94 398.485 295.24 454.785 364.74 454.785C434.24 454.785 490.54 398.485 490.54 328.985C490.44 259.485 434.14 203.185 364.74 203.185Z" 
+                                        fill="url(#paint0_linear)" stroke="url(#paint0_linear)" stroke-width="8"></path>
+                            <path class="modulesSvgMainCircle" id="modulesSvgMainCircle" d="M364.74 454.585C434.162 454.585 490.44 398.307 490.44 328.885C490.44 259.463 434.162 203.185 364.74 203.185C295.318 203.185 239.04 259.463 239.04 328.885C239.04 398.307 295.318 454.585 364.74 454.585Z" fill="white"></path>
+                            <path id="modulesSvgMainCircle_inner" class="modulesSvgMainCircle_inner" d="M364.74 454.585C434.162 454.585 490.44 398.307 490.44 328.885C490.44 259.463 434.162 203.185 364.74 203.185C295.318 203.185 239.04 259.463 239.04 328.885C239.04 398.307 295.318 454.585 364.74 454.585Z"></path>
+                            </g>
+                            <g class="modules_centerButton" id="CenterButton" onclick="moduleCenterButton(this)">
+                            <path id="Vector_7" d="M374.24 434.885C371.94 437.885 368.44 439.585 364.74 439.585C358.74 439.585 353.64 435.185 352.84 429.185C351.94 422.585 356.54 416.585 363.14 415.685C369.74 414.785 375.74 419.385 376.64 425.985C377.04 429.085 376.24 432.285 374.24 434.885Z" fill="url(#paint1_linear)"></path>
+                            <path id="Vector_8" d="M369.34 427.585C369.34 427.885 369.24 428.185 369.04 428.385L362.04 434.685C361.84 434.885 361.54 434.985 361.24 434.985C360.94 434.985 360.74 434.885 360.54 434.685C360.34 434.485 360.24 434.285 360.24 433.985C360.24 433.685 360.34 433.485 360.54 433.285L366.34 428.185C366.44 428.085 366.54 427.885 366.54 427.685C366.54 427.485 366.44 427.285 366.34 427.185L360.54 422.085C360.34 421.885 360.24 421.685 360.24 421.385C360.24 421.085 360.34 420.885 360.54 420.685C360.94 420.285 361.64 420.285 362.04 420.685L369.04 426.985C369.24 426.985 369.34 427.285 369.34 427.585Z" fill="white"></path>
+                            </g>
+                            <text id="modInnerText" transform="translate(274 285.286) rotate(-0.63075)" fill="#333333" xml:space="preserve" style="white-space: pre" font-family="'Exo', sans-serif" class="modulesInnerCircleText modulesSvgMainCircleGroup" letter-spacing="0em" onclick="moduleCenterButton(this)">
+                                <tspan id="modules_tspan1" x="-18" y="18.7852">   This supports all types  </tspan>
+                                <tspan id="modules_tspan2" x="-18" y="38.7852">   of APIs such as SOAP, REST, </tspan>
+                                <tspan id="modules_tspan3" x="-18" y="60.7852">   XML, JSON and Response </tspan>
+                                <tspan id="modules_tspan4" x="-18" y="82.7852">   Validations including modern  </tspan>
+                                <tspan id="modules_tspan5" x="-18" y="104.7852">   cloud microservices. </tspan>
+                                <tspan id="modules_tspan6" x="-18" y="126.7852"> </tspan>
+
+
+                            </text>
+                            <text id="modInnerTextHead1" class="modulesInnerCircleText-heading " fill="#D43371" xml:space="preserve" style="white-space: pre" font-family="'Quicksand', sans-serif"  letter-spacing="0em" onclick="moduleCenterButton(this)">
+                                <tspan id="modules_tspan_head1"  x="335" y="248.652">API &</tspan></text>
+                            <text id="modInnerTextHead2" class="modulesInnerCircleText-heading" fill="#D43371" xml:space="preserve" style="white-space: pre" font-family="'Quicksand', sans-serif"  letter-spacing="0em" onclick="moduleCenterButton(this)">
+                                <tspan id="modules_tspan_head2"  x="273" y="272.652">&nbsp&nbsp  Microservices</tspan></text>
+                           
+                           
+                            <g class="modulesGroup1  modulesIconGroup" id="Database" onclick="changeModuleText(this)">
+                            <path class="modulesSvgCircleBack" id="modules_Database" d="M570.74 366.785C591.727 366.785 608.74 349.772 608.74 328.785C608.74 307.798 591.727 290.785 570.74 290.785C549.753 290.785 532.74 307.798 532.74 328.785C532.74 349.772 549.753 366.785 570.74 366.785Z" fill="white"></path>
+                            <text id="modules_Database_text" fill="white" xml:space="preserve" style="white-space: pre" font-family="Exo" font-size="18" font-weight="600" letter-spacing="0em"><tspan x="533" y="393.16">Database</tspan></text>
+                            <path id="modules_Database_vector" d="M553.24 342.885H588.24V335.885H553.24V342.885ZM555.54 337.585H560.24V341.085H555.54V337.585ZM553.24 314.885V321.885H588.24V314.885H553.24ZM560.24 320.085H555.54V316.585H560.24V320.085ZM585.94 319.885H562.64V316.885H585.94V319.885ZM585.94 330.385H562.64V327.385H585.94V330.385ZM585.94 340.985H562.64V337.985H585.94V340.985ZM553.24 332.385H588.24V325.385H553.24V332.385ZM555.54 327.085H560.24V330.585H555.54V327.085Z" fill="url(#paint5_linear)"></path>
+                            </g>
+
+                            <g  class="modulesGroup2  modulesIconGroup"  id="WebUI" onclick="changeModuleText(this)">
+                            <path class="modulesSvgCircleBack" id="modules_WebUI" d="M290.117 61.0818C296.753 41.1716 285.992 19.6516 266.082 13.0156C246.172 6.37958 224.652 17.1404 218.016 37.0506C211.38 56.9608 222.14 78.4808 242.051 85.1168C261.961 91.7528 283.481 80.992 290.117 61.0818Z" fill="white"></path>
+                            <text id="modules_WebUI_text" fill="white" xml:space="preserve" style="white-space: pre" font-family="Exo" font-size="18" font-weight="600" letter-spacing="0em"><tspan x="225" y="107">Web UI</tspan></text>
+                            <path id="modules_WebUI_vector" d="M233 36.6V61.9C233 63.4 234.2 64.5 235.6 64.5H270.3C271.8 64.5 272.9 63.3 272.9 61.9V36.6C272.9 35.1 271.7 34 270.3 34H235.6C234.2 34 233 35.2 233 36.6ZM236.8 60.5V38H245.7V60.5H236.8ZM249.5 59.9V51.7H257.5V59.9H249.5ZM268.9 59.9H261.2V51.7H268.9V59.9ZM249.5 48V38H269V48H249.5Z" fill="url(#paint5_linear)"></path>
+                            </g>
+
+                            <g class="modulesGroup3 modulesIconGroup"  id="Security" onclick="changeModuleText(this)">
+                            <path class="modulesSvgCircleBack" id="modules_Security" d="M73.24 487.585C94.2268 487.585 111.24 470.572 111.24 449.585C111.24 428.598 94.2268 411.585 73.24 411.585C52.2532 411.585 35.24 428.598 35.24 449.585C35.24 470.572 52.2532 487.585 73.24 487.585Z" fill="white"></path>
+                            <text id="modules_Security_text" fill="white" xml:space="preserve" style="white-space: pre" font-family="Exo" font-size="18" font-weight="600" letter-spacing="0em"><tspan x="38.84" y="514.79">Security</tspan><tspan x="41" y="538.79">Testing</tspan></text>
+                            <path id="modules_Security_vector" d="M81.24 456.785C82.455 456.785 83.44 455.8 83.44 454.585C83.44 453.37 82.455 452.385 81.24 452.385C80.025 452.385 79.04 453.37 79.04 454.585C79.04 455.8 80.025 456.785 81.24 456.785Z M83.24 445.785V436.185L68.24 429.685L53.24 436.185V445.985C53.24 455.085 59.64 463.585 68.24 465.585C69.34 465.285 70.44 464.985 71.44 464.485C75.24 469.885 82.74 471.185 88.14 467.385C93.54 463.585 94.84 456.085 91.04 450.685C89.24 448.085 86.34 446.285 83.24 445.785ZM69.24 457.585C69.24 458.685 69.44 459.785 69.74 460.785C69.24 460.985 68.74 461.185 68.24 461.385C61.64 459.085 57.24 452.885 57.24 445.885V438.685L68.24 433.885L79.24 438.685V445.685C73.44 446.785 69.14 451.785 69.24 457.585ZM81.24 465.585C76.84 465.585 73.24 461.985 73.24 457.585C73.24 453.185 76.84 449.585 81.24 449.585C85.64 449.585 89.24 453.185 89.24 457.585C89.24 461.985 85.64 465.585 81.24 465.585Z M81.24 458.585C79.74 458.585 76.84 459.285 76.74 460.785C78.44 463.285 81.84 463.885 84.34 462.185C84.94 461.785 85.34 461.285 85.74 460.785C85.54 459.385 82.64 458.585 81.24 458.585Z" fill="url(#paint2_linear)"></path>
+                            </g>
+
+
+                            <g class="modulesGroup4 modulesIconGroup" id="elastic" onclick="changeModuleText(this)">
+                            <path class="modulesSvgCircleBack" id="modules_elastic" d="M485.84 658.085C506.827 658.085 523.84 641.072 523.84 620.085C523.84 599.098 506.827 582.085 485.84 582.085C464.853 582.085 447.84 599.098 447.84 620.085C447.84 641.072 464.853 658.085 485.84 658.085Z" fill="white"></path>
+                            <text id="modules_elastic_text" fill="white" xml:space="preserve" style="white-space: pre" font-family="Exo" font-size="18" font-weight="600" letter-spacing="0em"><tspan x="440.16" y="690.51">The Elastic </tspan><tspan x="440.16" y="714.51">Stack (ELK)</tspan></text>
+                            <path id="modules_elastic_vector" d="M492.54 613.385H479.24V626.685H492.54V613.385ZM488.04 622.285H483.64V617.785H488.14L488.04 622.285ZM505.84 617.885V613.485H501.34V608.985C501.34 606.585 499.34 604.585 496.94 604.585H492.44V600.085H488.04V604.585H483.64V600.085H479.24V604.585H474.74C472.34 604.585 470.34 606.585 470.34 608.985V613.485H465.94V617.885H470.34V622.385H465.94V626.785H470.34V631.285C470.34 633.685 472.34 635.685 474.74 635.685H479.24V640.085H483.64V635.685H488.14V640.085H492.54V635.685H497.04C499.44 635.685 501.44 633.685 501.44 631.285V626.785H505.94V622.385H501.44V617.885H505.84ZM496.94 631.185H474.74V608.985H496.94V631.185Z" fill="url(#paint7_linear)"></path>
+                            </g>
+
+                            <g class="modulesGroup1 modulesIconGroup" id="Batch" onclick="changeModuleText(this)">
+                            <path class="modulesSvgCircleBack" id="modules_Batch" d="M244.24 658.385C265.227 658.385 282.24 641.372 282.24 620.385C282.24 599.398 265.227 582.385 244.24 582.385C223.253 582.385 206.24 599.398 206.24 620.385C206.24 641.372 223.253 658.385 244.24 658.385Z" fill="white"></path>
+                            <text id="modules_Batch_text" fill="white" xml:space="preserve" style="white-space: pre" font-family="Exo" font-size="18" font-weight="600" letter-spacing="0em"><tspan x="195.5" y="686.6">BATCH/SSH</tspan></text>
+                            <path id="modules_Batch_vector" d="M243.44 634.485L229.44 623.585C229.04 623.285 228.44 623.285 228.04 623.585L226.54 624.785C226.04 625.185 225.94 625.885 226.34 626.485C226.44 626.585 226.44 626.585 226.54 626.685L243.54 639.885C243.94 640.185 244.54 640.185 244.94 639.885L261.94 626.685C262.44 626.285 262.54 625.585 262.14 624.985C262.04 624.885 262.04 624.885 261.94 624.785L260.44 623.585C260.04 623.285 259.44 623.285 259.04 623.585L245.04 634.485C244.54 634.885 243.94 634.885 243.44 634.485ZM243.44 629.185C243.84 629.485 244.44 629.485 244.84 629.185L259.54 617.685L261.74 615.985C262.24 615.585 262.34 614.885 261.94 614.385C261.84 614.285 261.84 614.185 261.74 614.185L244.74 600.985C244.34 600.685 243.74 600.685 243.34 600.985L226.34 614.185C225.84 614.585 225.74 615.285 226.14 615.885C226.24 615.985 226.24 615.985 226.34 616.085L228.54 617.785L243.44 629.185ZM244.94 606.185L255.04 614.085C255.54 614.485 255.64 615.185 255.24 615.785C255.14 615.885 255.14 615.885 255.04 615.985L244.94 623.885C244.54 624.185 243.94 624.185 243.54 623.885L233.44 615.985C232.94 615.585 232.84 614.885 233.24 614.285C233.34 614.185 233.34 614.185 233.44 614.085L243.54 606.185C243.94 605.885 244.54 605.885 244.94 606.185Z" fill="url(#paint0_linear)"></path>
+                            </g>
+
+                            <g class="modulesGroup2 modulesIconGroup" id="Mobile" onclick="changeModuleText(this)">
+                            <path class="modulesSvgCircleBack" id="modules_Mobile" d="M510.34 221.385C531.327 221.385 548.34 204.372 548.34 183.385C548.34 162.398 531.327 145.385 510.34 145.385C489.353 145.385 472.34 162.398 472.34 183.385C472.34 204.372 489.353 221.385 510.34 221.385Z" fill="white"></path>
+                            <text id="modules_Mobile_text" fill="white" xml:space="preserve" style="white-space: pre" font-family="Exo" font-size="18" font-weight="600" letter-spacing="0em"><tspan x="482.3" y="241.95">Mobile</tspan></text>
+                            <path id="modules_Mobile_vector" d="M521.94 163.485H498.64C496.34 163.485 494.44 165.385 494.44 167.685V199.385C494.44 201.685 496.34 203.585 498.64 203.585H521.94C524.24 203.585 526.14 201.685 526.14 199.385V167.685C526.14 165.285 524.24 163.485 521.94 163.485ZM510.34 202.285C508.94 202.285 507.84 201.185 507.84 199.785C507.84 198.385 508.94 197.285 510.34 197.285C511.74 197.285 512.84 198.385 512.84 199.785C512.84 201.185 511.74 202.285 510.34 202.285ZM522.84 196.785H497.84V166.785H522.84V196.785Z" fill="url(#paint9_linear)"></path>
+                            </g>
+
+                            <g class="modulesGroup3 modulesIconGroup" id="Performance" onclick="changeModuleText(this)">
+                            <path class="modulesSvgCircleBack" id="modules_Performance" d="M656.44 486.985C677.427 486.985 694.44 469.972 694.44 448.985C694.44 427.998 677.427 410.985 656.44 410.985C635.453 410.985 618.44 427.998 618.44 448.985C618.44 469.972 635.453 486.985 656.44 486.985Z" fill="white"></path>
+                            <text id="modules_Performance_text" fill="white" xml:space="preserve" style="white-space: pre" font-family="Exo" font-size="18" font-weight="600" letter-spacing="0em"><tspan x="598.5" y="514.1">Performance</tspan></text>
+                            <path id="modules_Performance_vector" d="M653.64 455.785C655.24 457.385 657.74 457.385 659.34 455.785L670.64 438.785L653.64 450.085C652.04 451.685 652.04 454.185 653.64 455.785Z M673.24 442.085L670.74 445.785C673.14 450.585 672.94 456.285 670.24 460.985H642.44C637.94 453.385 640.44 443.585 648.04 439.085C652.74 436.285 658.64 436.085 663.54 438.585L667.24 436.085C657.94 430.085 645.64 432.685 639.54 441.885C635.44 448.185 635.24 456.285 639.04 462.885C639.74 464.085 641.04 464.885 642.54 464.885H670.24C671.64 464.885 673.04 464.085 673.74 462.885C677.54 456.385 677.34 448.385 673.24 442.085Z" fill="url(#paint10_linear)"></path>
+                            </g>
+
+                            <g class="modulesGroup4 modulesIconGroup" id="integration" onclick="changeModuleText(this)">
+                            <text id="modules_integration_text" fill="white" xml:space="preserve" style="white-space: pre" font-family="Exo" font-size="18" font-weight="600" letter-spacing="0em"><tspan x="322" y="596.075">Integration</tspan><tspan x="327" y="620.075">Adaptors</tspan></text>
+                            <path class="modulesSvgCircleBack" id="modules_integration" d="M365.34 572.785C386.327 572.785 403.34 555.772 403.34 534.785C403.34 513.798 386.327 496.785 365.34 496.785C344.353 496.785 327.34 513.798 327.34 534.785C327.34 555.772 344.353 572.785 365.34 572.785Z" fill="white"></path>
+                            <path id="modules_integration_vector" d="M370.14 543.985L377.34 536.785L370.14 529.585L367.34 532.385L371.64 536.785L367.34 541.085L370.14 543.985Z M363.34 541.085L359.04 536.785L363.34 532.385L360.54 529.585L353.34 536.785L360.54 543.985L363.34 541.085Z M379.34 518.785H370.94C369.84 515.685 366.34 514.085 363.24 515.185C361.54 515.785 360.24 517.085 359.64 518.785H351.24C350.94 518.785 350.74 518.785 350.44 518.885C349.14 519.185 348.04 520.085 347.54 521.285C347.34 521.785 347.24 522.285 347.24 522.785V550.785C347.24 551.285 347.34 551.885 347.54 552.385C347.74 552.885 348.04 553.285 348.44 553.685C348.94 554.285 349.64 554.585 350.44 554.785C350.74 554.785 350.94 554.885 351.24 554.885H379.24C381.44 554.885 383.24 553.085 383.24 550.885V522.885C383.34 520.585 381.54 518.785 379.34 518.785ZM365.34 518.285C366.14 518.285 366.84 518.985 366.84 519.785C366.84 520.585 366.14 521.285 365.34 521.285C364.54 521.285 363.84 520.585 363.84 519.785C363.84 518.985 364.54 518.285 365.34 518.285ZM379.34 542.785V550.785H351.34V522.785H379.34V542.785Z" fill="url(#paint12_linear)"></path>
+                            </g>
+
+                            <g class="modulesGroup1 modulesIconGroup" id="Cloud" onclick="changeModuleText(this)">
+                            <text id="modules_Cloud_text" fill="white" xml:space="preserve" style="white-space: pre" font-family="Exo" font-size="18" font-weight="600" letter-spacing="0em"><tspan x="455" y="107.075">Cloud </tspan><tspan x="437" y="131.075">Integration</tspan></text>
+                            <path class="modulesSvgCircleBack" id="modules_Cloud" d="M518.107 53.685C521.469 32.9689 507.401 13.4497 486.685 10.0876C465.969 6.7255 446.45 20.7937 443.088 41.5098C439.726 62.2259 453.794 81.7451 474.51 85.1072C495.226 88.4693 514.745 74.4011 518.107 53.685Z" fill="white"></path>
+                            <path id="modules_Cloud_vector" d="M495.173 41.3659C493.673 33.7659 486.273 28.7659 478.673 30.2659C474.473 31.0659 470.873 33.7659 468.973 37.5659C462.773 38.2659 458.373 43.8659 459.073 49.9659C459.673 55.6659 464.473 59.9659 470.173 59.9659H494.573C499.773 59.9659 503.973 55.8659 503.973 50.6659C503.973 45.7659 500.073 41.6659 495.173 41.3659ZM494.573 56.2659H470.173C466.073 56.2659 462.673 52.8659 462.673 48.7659C462.673 44.9659 465.573 41.7659 469.273 41.3659L471.273 41.1659L472.173 39.3659C474.773 34.3659 481.073 32.3659 486.073 35.0659C488.773 36.4659 490.773 39.0659 491.373 42.1659L491.973 44.9659L494.873 45.1659C497.973 45.4659 500.273 48.1659 499.973 51.1659C499.773 53.9659 497.373 56.2659 494.573 56.2659ZM477.673 49.0659L473.773 45.1659L471.173 47.7659L477.773 54.3659L489.073 43.0659L486.473 40.4659L477.673 49.0659Z" fill="url(#paint15_linear)"></path>
+                            </g>
+
+                            <g class="modulesGroup2 modulesIconGroup" id="Accessibility" onclick="changeModuleText(this)">
+                            <text id="modules_Accessibility_text" fill="white" xml:space="preserve" style="white-space: pre" font-family="Exo" font-size="18" font-weight="600" letter-spacing="0em"><tspan x="107.47" y="386.95">Accessibility</tspan><tspan x="128" y="410.95">Testing</tspan></text>
+                            <path class="modulesSvgCircleBack" id="modules_Accessibility" d="M159.34 367.385C180.327 367.385 197.34 350.372 197.34 329.385C197.34 308.398 180.327 291.385 159.34 291.385C138.353 291.385 121.34 308.398 121.34 329.385C121.34 350.372 138.353 367.385 159.34 367.385Z" fill="white"></path>
+                            <path id="modules_Accessibility_vector" d="M175.94 338.485L162.14 324.685C164.24 319.185 161.44 313.085 155.94 310.985C152.04 309.485 147.54 310.485 144.64 313.485C140.54 317.685 140.64 324.385 144.84 328.485C147.84 331.385 152.14 332.285 156.04 330.785L163.34 338.085L162.34 339.085C161.04 340.385 161.04 342.385 162.34 343.685L164.84 346.185C166.14 347.485 168.14 347.485 169.44 346.185L170.54 345.085C171.24 345.585 172.04 345.785 172.94 345.785C175.34 345.785 177.34 343.885 177.34 341.385C177.24 340.385 176.84 339.285 175.94 338.485ZM166.74 339.385C167.34 338.785 167.34 337.685 166.74 337.085L157.44 327.785C157.14 327.485 156.74 327.285 156.24 327.285C155.94 327.285 155.74 327.385 155.44 327.485C151.84 329.385 147.44 327.985 145.54 324.385C143.64 320.785 145.04 316.385 148.64 314.485C152.24 312.585 156.64 313.985 158.54 317.585C159.64 319.685 159.64 322.185 158.54 324.385C158.24 324.985 158.34 325.785 158.84 326.285L173.44 340.785L173.54 340.885C173.74 341.085 173.84 341.385 173.84 341.585C173.84 341.985 173.54 342.385 173.14 342.585C172.74 342.785 172.24 342.685 171.94 342.385L171.44 341.885C170.84 341.285 169.74 341.285 169.14 341.885L167.94 343.085C167.44 343.585 167.14 343.885 166.94 344.085C166.84 343.985 166.44 343.585 165.84 342.985L164.44 341.585L166.74 339.385Z M155.54 320.885C155.54 322.785 154.04 324.285 152.14 324.285C150.24 324.285 148.74 322.785 148.74 320.885C148.74 318.985 150.24 317.485 152.14 317.485C154.04 317.585 155.54 319.085 155.54 320.885Z" fill="url(#paint16_linear)"></path>
+                            </g>
+
+                            <g class="modulesGroup3 modulesIconGroup" id="API" onclick="changeModuleText(this)">
+                            <text id="modules_API_text"  class="modulesSvgText_Active" fill="white" xml:space="preserve" style="white-space: pre" font-family="Exo" font-size="18" font-weight="600" letter-spacing="0em"><tspan x="342" y="173.075">API &amp; </tspan><tspan x="312" y="197.075">Microservices</tspan></text>
+                            <path id = "modules_API" class="modulesSvgCircleBack_Active" id="modules_API" d="M367 155C387.987 155 405 137.987 405 117C405 96.0132 387.987 79 367 79C346.013 79 329 96.0132 329 117C329 137.987 346.013 155 367 155Z" fill="white"></path>
+                            <path id="modules_API_vector" class="modulesSvgVector_Active" d="M365.975 98C365.375 98 364.775 98.2 364.275 98.7L357.575 105.4L361.475 108.6L366.075 104L370.775 108.6L374.375 105.4L367.675 98.7C367.275 98.3 366.675 98 365.975 98ZM377.575 108.6L373.075 113.2L376.975 117L373.075 120.9L377.575 125.4L384.275 118.7C385.175 117.8 385.175 116.3 384.275 115.4C384.375 115.4 377.575 108.6 377.575 108.6ZM354.375 108.6L347.675 115.3C346.775 116.2 346.775 117.7 347.675 118.6L354.375 125.3L358.875 120.8L354.975 116.9L358.875 113.1L354.375 108.6ZM365.975 113.4L362.375 117L365.975 120.6L369.575 117L365.975 113.4ZM362.175 124.1L357.675 128.6L364.375 135.3C365.275 136.2 366.775 136.2 367.675 135.3L374.375 128.6L369.875 124.1L365.975 128L362.175 124.1Z" fill="url(#paint18_linear)"></path>
+                            </g>
+
+                            <g class="modulesGroup4 modulesIconGroup" id="Desktop" onclick="changeModuleText(this)">
+                            <path id="modules_Desktop" class="modulesSvgCircleBack" d="M219.44 221.885C240.427 221.885 257.44 204.872 257.44 183.885C257.44 162.898 240.427 145.885 219.44 145.885C198.453 145.885 181.44 162.898 181.44 183.885C181.44 204.872 198.453 221.885 219.44 221.885Z" fill="white"></path>
+                            <text id="modules_Desktop_text" fill="white" xml:space="preserve" style="white-space: pre" font-family="Exo" font-size="18" font-weight="600" letter-spacing="0em"><tspan x="185.37" y="244.34">Desktop</tspan></text>
+                            <path id="modules_Desktop_vector" d="M234.14 167.485H204.64C202.84 167.485 201.34 168.985 201.34 170.785V190.385C201.34 192.185 202.84 193.685 204.64 193.685H216.14V196.985H212.84V200.285H225.94V196.985H222.64V193.685H234.14C235.94 193.685 237.44 192.185 237.44 190.385V170.785C237.44 168.985 235.94 167.485 234.14 167.485ZM234.14 190.385H204.64V170.785H234.14V190.385Z" fill="url(#paint19_linear)"></path>
+                            </g>
+
+                            <g class="modulesGroup4 modulesIconGroup" id="Companion" onclick="changeModuleText(this)">
+                            <text id="modules_Companion_text" fill="white" xml:space="preserve" style="white-space: pre" font-family="Exo" font-size="18" font-weight="600" letter-spacing="0em"><tspan x="24" y="268.84">Companion</tspan><tspan x="25" y="292.84">WebUI App</tspan></text>
+                            <path class="modulesSvgCircleBack" id="modules_Companion" d="M73.04 245.985C94.0268 245.985 111.04 228.972 111.04 207.985C111.04 186.998 94.0268 169.985 73.04 169.985C52.0532 169.985 35.04 186.998 35.04 207.985C35.04 228.972 52.0532 245.985 73.04 245.985Z" fill="white"></path>
+                            <path id="modules_Companion_vector" d="M82.24 194.585L85.94 198.385C86.24 198.685 86.24 199.085 85.94 199.385L82.74 202.585C82.44 202.885 82.04 202.885 81.74 202.585L78.54 199.385C78.24 199.085 78.24 198.685 78.54 198.385L82.24 194.585ZM67.24 194.185V201.285C67.24 201.685 66.94 201.985 66.54 201.985H60.14C59.74 201.985 59.44 201.685 59.44 201.285V194.885C59.44 194.485 59.74 194.185 60.14 194.185H67.24ZM86.84 213.885V220.985C86.84 221.385 86.54 221.685 86.14 221.685H79.74C79.34 221.685 79.04 221.385 79.04 220.985V214.585C79.04 214.185 79.34 213.885 79.74 213.885H86.84ZM67.24 213.885V220.985C67.24 221.385 66.94 221.685 66.54 221.685H60.14C59.74 221.685 59.44 221.385 59.44 220.985V214.585C59.44 214.185 59.74 213.885 60.14 213.885H67.24ZM81.74 190.185L73.64 198.285C73.34 198.585 73.34 198.985 73.64 199.285L81.74 207.385C82.04 207.685 82.44 207.685 82.74 207.385L90.84 199.285C91.14 198.985 91.14 198.585 90.84 198.285L82.74 190.185C82.44 189.885 82.04 189.885 81.74 190.185ZM70.44 190.285H56.14C55.74 190.285 55.44 190.585 55.44 190.985V205.285C55.44 205.685 55.74 205.985 56.14 205.985H70.44C70.84 205.985 71.14 205.685 71.14 205.285V190.985C71.14 190.585 70.84 190.285 70.44 190.285ZM90.04 209.885H75.84C75.44 209.885 75.14 210.185 75.14 210.585V224.885C75.14 225.285 75.44 225.585 75.84 225.585H90.14C90.54 225.585 90.84 225.285 90.84 224.885V210.585C90.74 210.285 90.44 209.885 90.04 209.885ZM70.44 209.885H56.14C55.74 209.885 55.44 210.185 55.44 210.585V224.885C55.44 225.285 55.74 225.585 56.14 225.585H70.44C70.84 225.585 71.14 225.285 71.14 224.885V210.585C71.14 210.285 70.84 209.885 70.44 209.885Z" fill="url(#paint20_linear)"></path>
+                            </g>
+
+                            <g class="modulesGroup4 modulesIconGroup" id="Mainframe" onclick="changeModuleText(this)">
+                            <path class="modulesSvgCircleBack" id="modules_Mainframe" d="M656.34 246.085C677.327 246.085 694.34 229.072 694.34 208.085C694.34 187.098 677.327 170.085 656.34 170.085C635.353 170.085 618.34 187.098 618.34 208.085C618.34 229.072 635.353 246.085 656.34 246.085Z" fill="white"></path>
+                            <text id="modules_Mainframe_text" fill="white" xml:space="preserve" style="white-space: pre" font-family="Exo" font-size="18" font-weight="600" letter-spacing="0em"><tspan x="610.5" y="271.56">Mainframe</tspan></text>
+                            <path id="modules_Mainframe_vector" d="M654.44 202.285H658.34V206.185H654.44V202.285ZM650.54 206.185H654.44V210.085H650.54V206.185ZM658.34 206.185H662.24V210.085H658.34V206.185ZM662.14 202.285H666.04V206.185H662.14V202.285ZM646.64 202.285H650.54V206.185H646.64V202.285ZM669.94 190.585H642.74C640.64 190.585 638.84 192.285 638.84 194.485V221.685C638.84 223.785 640.54 225.585 642.74 225.585H669.94C672.04 225.585 673.84 223.885 673.84 221.685V194.485C673.84 192.385 672.14 190.585 669.94 190.585ZM650.54 219.785H646.64V215.885H650.54V219.785ZM658.34 219.785H654.44V215.885H658.34V219.785ZM666.04 219.785H662.14V215.885H666.04V219.785ZM669.94 206.185H666.04V210.085H669.94V213.985H666.04V210.085H662.14V213.985H658.24V210.085H654.34V213.985H650.44V210.085H646.64V213.985H642.74V210.085H646.64V206.185H642.74V194.485H669.94V206.185Z" fill="url(#paint21_linear)"></path>
+                            </g>
+
+                            <g class="modulesGroup4 modulesIconGroup" id="Infrastructure" onclick="changeModuleText(this)">
+                            <path class="modulesSvgCircleBack" id="modules_Infrastructure" d="M219.84 512.685C240.827 512.685 257.84 495.672 257.84 474.685C257.84 453.698 240.827 436.685 219.84 436.685C198.853 436.685 181.84 453.698 181.84 474.685C181.84 495.672 198.853 512.685 219.84 512.685Z" fill="white"></path>
+                            <text id="modules_Infrastructure_text" fill="white" xml:space="preserve" style="white-space: pre" font-family="Exo" font-size="18" font-weight="600" letter-spacing="0em"><tspan x="161.29" y="538">Infrastructure</tspan></text>
+                            <path id="modules_Infrastructure_vector" d="M207.24 489.785L207.84 494.685L211.44 491.285L217.54 474.385C216.04 473.985 214.74 473.285 213.64 472.185L207.24 489.785Z M225.94 472.185C224.84 473.285 223.44 473.985 222.04 474.385L228.14 491.285L231.74 494.685L232.34 489.785L225.94 472.185Z M226.44 465.785C226.44 462.985 224.64 460.485 222.04 459.485V454.585H217.64V459.485C214.14 460.685 212.34 464.485 213.64 467.985C214.84 471.485 218.64 473.285 222.14 471.985C224.74 471.185 226.44 468.685 226.44 465.785ZM219.84 468.085C218.64 468.085 217.64 467.085 217.64 465.885C217.64 464.685 218.64 463.685 219.84 463.685C221.04 463.685 222.04 464.685 222.04 465.885C222.04 467.085 221.04 468.085 219.84 468.085Z" fill="url(#paint22_linear)"></path>
+
+                            </g>
+
+                            <g class="modulesGroup4 modulesIconGroup" id="AI" onclick="changeModuleText(this)">
+                            <text id="modules_AI_text" fill="white" xml:space="preserve" style="white-space: pre" font-family="Exo" font-size="18" font-weight="600" letter-spacing="0em"><tspan x="467" y="543.075">Artificial</tspan><tspan x="455" y="567.075">Intelligence</tspan></text>
+                            <path class="modulesSvgCircleBack" id="modules_AI" d="M501.74 522.385C522.727 522.385 539.74 505.372 539.74 484.385C539.74 463.398 522.727 446.385 501.74 446.385C480.753 446.385 463.74 463.398 463.74 484.385C463.74 505.372 480.753 522.385 501.74 522.385Z" fill="white"></path>
+                            <path id="modules_AI_vector" d="M499.544 501.798C498.34 502.839 496.885 503.546 495.324 503.848C494.107 504.074 492.856 504.04 491.653 503.751C490.45 503.461 489.321 502.921 488.34 502.167C487.359 501.412 486.548 500.46 485.96 499.371C485.371 498.282 485.018 497.082 484.924 495.848C484.937 495.669 484.892 495.49 484.797 495.337C484.702 495.184 484.561 495.066 484.394 494.998C482.771 494.179 481.476 492.831 480.721 491.177C479.967 489.523 479.798 487.661 480.244 485.898C480.553 484.722 481.225 483.672 482.164 482.898C482.224 482.865 482.278 482.818 482.32 482.763C482.362 482.707 482.392 482.644 482.408 482.576C482.424 482.508 482.425 482.438 482.413 482.369C482.4 482.301 482.373 482.236 482.334 482.178C480.594 478.238 481.524 473.248 487.064 471.178C487.489 471.023 487.927 470.906 488.374 470.828C488.503 470.823 488.625 470.768 488.714 470.675C488.804 470.582 488.854 470.458 488.854 470.328C489.085 468.757 489.78 467.29 490.848 466.115C491.917 464.939 493.311 464.108 494.854 463.728C496.228 463.389 497.669 463.427 499.024 463.838L499.504 463.978C499.504 463.978 499.504 463.978 499.504 463.918C499.434 462.558 500.174 461.918 501.674 462.008C503.047 462.079 504.412 462.266 505.754 462.568C506.129 462.632 506.467 462.836 506.698 463.138C506.93 463.44 507.039 463.819 507.004 464.198C507.004 464.708 507.004 465.198 507.004 465.738C506.994 465.788 506.994 465.839 507.004 465.888C507.014 465.937 507.035 465.984 507.064 466.025C507.093 466.066 507.13 466.101 507.173 466.128C507.216 466.154 507.264 466.171 507.314 466.178C507.484 466.212 507.647 466.276 507.794 466.368C508.534 466.888 509.014 466.598 509.574 465.998C510.874 464.598 511.244 464.598 512.834 465.698C515.188 467.306 517.192 469.374 518.724 471.778C518.86 471.937 518.963 472.122 519.026 472.322C519.089 472.522 519.111 472.732 519.09 472.94C519.07 473.149 519.007 473.351 518.906 473.534C518.805 473.718 518.668 473.879 518.504 474.008L518.374 474.138C518.024 474.518 517.374 474.808 517.374 475.268C517.374 475.728 517.724 476.268 517.904 476.738C517.923 476.821 517.973 476.893 518.044 476.939C518.114 476.986 518.2 477.003 518.284 476.988H519.924C520.288 476.968 520.647 477.082 520.932 477.309C521.218 477.536 521.41 477.859 521.474 478.218C522.228 481.357 522.228 484.63 521.474 487.768C521.415 488.115 521.234 488.43 520.965 488.657C520.696 488.884 520.356 489.009 520.004 489.008C519.484 489.008 519.004 489.008 518.454 489.008C518.39 488.995 518.324 488.996 518.26 489.01C518.196 489.024 518.136 489.051 518.083 489.09C518.03 489.128 517.986 489.178 517.954 489.234C517.921 489.291 517.901 489.353 517.894 489.418C517.871 489.542 517.827 489.66 517.764 489.768C517.184 490.538 517.534 491.048 518.144 491.618C519.484 492.868 519.484 493.258 518.454 494.768C516.844 497.171 514.753 499.214 512.314 500.768C512.151 500.917 511.958 501.029 511.748 501.096C511.538 501.164 511.316 501.186 511.097 501.16C510.878 501.135 510.667 501.062 510.478 500.948C510.29 500.834 510.128 500.68 510.004 500.498L509.844 500.338C509.454 499.988 509.174 499.338 508.714 499.338C508.254 499.338 507.714 499.698 507.244 499.878C507.162 499.9 507.092 499.95 507.046 500.02C507 500.091 506.981 500.175 506.994 500.258C506.994 500.788 506.994 501.318 506.994 501.848C507.023 502.229 506.908 502.606 506.67 502.905C506.433 503.204 506.091 503.401 505.714 503.458C504.254 503.802 502.762 503.986 501.264 504.008C501.026 504.049 500.781 504.032 500.551 503.96C500.321 503.888 500.111 503.763 499.938 503.594C499.765 503.425 499.635 503.218 499.558 502.99C499.481 502.761 499.459 502.517 499.494 502.278L499.544 501.798ZM499.544 481.668C499.544 477.058 499.544 472.448 499.544 467.848C499.557 467.705 499.525 467.56 499.451 467.436C499.378 467.312 499.266 467.215 499.134 467.158C498.019 466.552 496.718 466.387 495.487 466.696C494.257 467.006 493.188 467.767 492.494 468.828C491.204 470.758 491.634 474.318 493.004 475.998C493.364 476.438 493.354 476.438 493.764 475.998C493.975 475.761 494.256 475.598 494.567 475.531C494.878 475.464 495.201 475.498 495.491 475.627C495.782 475.756 496.023 475.974 496.182 476.249C496.34 476.524 496.408 476.843 496.374 477.158C496.314 477.595 496.088 477.993 495.744 478.268C494.985 478.975 494.411 479.857 494.071 480.836C493.731 481.816 493.636 482.864 493.794 483.888C493.883 484.979 494.305 486.016 495.004 486.858C495.334 487.248 495.694 487.628 496.004 488.018C496.269 488.315 496.405 488.706 496.383 489.103C496.36 489.501 496.181 489.873 495.884 490.138C495.587 490.404 495.196 490.54 494.799 490.517C494.401 490.495 494.029 490.315 493.764 490.018C493.594 489.838 493.434 489.648 493.264 489.458C490.434 486.458 490.174 482.938 491.474 479.188C491.544 478.988 491.584 478.858 491.404 478.698C490.154 477.465 489.316 475.876 489.004 474.148C488.934 473.808 488.804 473.798 488.524 473.878C487.866 474.071 487.239 474.357 486.664 474.728C485.847 475.246 485.214 476.008 484.855 476.905C484.496 477.803 484.429 478.79 484.664 479.728C484.783 480.543 485.156 481.299 485.731 481.888C486.306 482.477 487.052 482.869 487.864 483.008H487.994C488.391 483.118 488.729 483.382 488.933 483.741C489.136 484.1 489.189 484.525 489.079 484.923C488.969 485.321 488.705 485.659 488.346 485.862C487.987 486.066 487.561 486.118 487.164 486.008C486.324 485.816 485.525 485.478 484.804 485.008C484.654 484.908 484.534 484.848 484.354 485.008C483.762 485.429 483.331 486.04 483.134 486.738C482.913 487.591 482.93 488.488 483.182 489.332C483.434 490.176 483.912 490.936 484.564 491.528C485.453 492.377 486.623 492.869 487.852 492.909C489.08 492.95 490.281 492.537 491.224 491.748C491.361 491.566 491.537 491.418 491.74 491.314C491.942 491.21 492.166 491.153 492.393 491.148C492.621 491.142 492.847 491.188 493.054 491.282C493.261 491.377 493.445 491.516 493.59 491.691C493.736 491.867 493.84 492.072 493.895 492.293C493.95 492.514 493.954 492.745 493.907 492.968C493.86 493.19 493.764 493.4 493.625 493.58C493.485 493.76 493.307 493.907 493.104 494.008C491.786 495.105 490.146 495.74 488.434 495.818C488.014 495.818 487.954 495.938 488.024 496.318C488.315 497.73 489.12 498.984 490.282 499.836C491.445 500.689 492.883 501.079 494.317 500.932C495.751 500.785 497.079 500.111 498.045 499.041C499.011 497.971 499.545 496.58 499.544 495.138C499.554 490.658 499.544 486.158 499.544 481.668ZM502.544 495.608V499.828C502.544 501.018 502.544 501.008 503.714 500.828C503.984 500.828 504.064 500.658 504.054 500.388C504.054 499.908 504.054 499.388 504.054 498.938C504.037 498.607 504.134 498.279 504.329 498.01C504.523 497.741 504.804 497.547 505.124 497.458C506.241 497.111 507.325 496.666 508.364 496.128C508.651 495.96 508.987 495.895 509.316 495.945C509.645 495.994 509.948 496.154 510.174 496.398C510.534 496.738 510.884 497.098 511.234 497.458C511.384 497.608 511.484 497.668 511.694 497.518C513.147 496.431 514.436 495.141 515.524 493.688C515.559 493.66 515.588 493.625 515.607 493.584C515.627 493.543 515.637 493.499 515.637 493.453C515.637 493.408 515.627 493.364 515.607 493.323C515.588 493.282 515.559 493.246 515.524 493.218C515.164 492.878 514.814 492.518 514.524 492.158C514.275 491.938 514.11 491.638 514.057 491.31C514.005 490.982 514.067 490.646 514.234 490.358C514.771 489.32 515.216 488.235 515.564 487.118C515.644 486.799 515.83 486.515 516.091 486.314C516.353 486.113 516.674 486.005 517.004 486.008C517.484 486.008 518.004 486.008 518.454 486.008C518.704 486.008 518.814 485.938 518.844 485.688C519.119 483.909 519.119 482.098 518.844 480.318C518.844 480.068 518.694 479.988 518.444 479.998C517.984 479.998 517.514 479.998 517.044 479.998C516.689 480.027 516.336 479.928 516.048 479.719C515.76 479.51 515.556 479.205 515.474 478.858C515.128 477.774 514.693 476.721 514.174 475.708C513.99 475.411 513.92 475.058 513.975 474.713C514.03 474.368 514.207 474.054 514.474 473.828C514.814 473.478 515.154 473.138 515.474 472.828C515.654 472.658 515.644 472.548 515.474 472.358C514.386 470.905 513.097 469.616 511.644 468.528C511.444 468.378 511.334 468.428 511.184 468.588C510.87 468.922 510.537 469.255 510.184 469.588C509.947 469.876 509.612 470.068 509.244 470.127C508.876 470.186 508.499 470.108 508.184 469.908C507.432 469.498 506.641 469.163 505.824 468.908C504.304 468.388 504.004 468.068 504.004 466.268C504.004 465.268 504.004 465.268 503.004 465.138C502.614 465.078 502.474 465.138 502.474 465.598C502.474 468.778 502.474 471.968 502.474 475.148C502.459 475.224 502.461 475.303 502.479 475.378C502.497 475.453 502.531 475.524 502.578 475.585C502.625 475.647 502.685 475.697 502.753 475.734C502.821 475.771 502.896 475.793 502.974 475.798C504.561 476.224 505.963 477.161 506.964 478.464C507.966 479.767 508.51 481.364 508.514 483.007C508.517 484.65 507.979 486.249 506.983 487.556C505.987 488.863 504.589 489.806 503.004 490.238C502.664 490.338 502.544 490.468 502.554 490.838C502.564 492.428 502.544 494.008 502.544 495.608ZM502.544 487.188C503.467 486.879 504.262 486.273 504.805 485.464C505.347 484.656 505.607 483.69 505.544 482.718C505.444 480.958 504.014 479.108 502.544 478.868V487.188Z" fill="url(#paint25_linear)"></path>
+                            </g>
+
+                            </g>
+                            </g>
+                            </g>
+                            <defs>
+                            <filter id="filter0_d" x="65.1987" y="180.509" width="599.283" height="303.676" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"></feColorMatrix>
+                            <feOffset dy="4"></feOffset>
+                            <feGaussianBlur stdDeviation="2"></feGaussianBlur>
+                            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"></feColorMatrix>
+                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"></feBlend>
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"></feBlend>
+                            </filter>
+                            <linearGradient id="paint0_linear" x1="238.94" y1="328.985" x2="490.54" y2="328.985" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#D23274"></stop>
+                            <stop offset="1" stop-color="#F24A37"></stop>
+                            </linearGradient>
+                            <linearGradient id="paint1_linear" x1="352.728" y1="427.579" x2="376.74" y2="427.579" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#D23274"></stop>
+                            <stop offset="1" stop-color="#F24A37"></stop>
+                            </linearGradient>
+                            <linearGradient id="paint2_linear" x1="553.24" y1="328.885" x2="588.24" y2="328.885" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#D23274"></stop>
+                            <stop offset="1" stop-color="#F24A37"></stop>
+                            </linearGradient>
+                            <linearGradient id="paint3_linear" x1="233" y1="49.25" x2="273" y2="49.25" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#D23274"></stop>
+                            <stop offset="1" stop-color="#F24A37"></stop>
+                            </linearGradient>
+                            <linearGradient id="paint4_linear" x1="78.95" y1="454.585" x2="83.43" y2="454.585" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#D23274"></stop>
+                            <stop offset="1" stop-color="#F24A37"></stop>
+                            </linearGradient>
+                            <linearGradient id="paint5_linear" x1="53.19" y1="449.624" x2="93.2209" y2="449.624" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#D23274"></stop>
+                            <stop offset="1" stop-color="#F24A37"></stop>
+                            </linearGradient>
+                            <linearGradient id="paint6_linear" x1="76.71" y1="460.867" x2="85.67" y2="460.867" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#D23274"></stop>
+                            <stop offset="1" stop-color="#F24A37"></stop>
+                            </linearGradient>
+                            <linearGradient id="paint7_linear" x1="465.87" y1="620.085" x2="505.87" y2="620.085" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#D23274"></stop>
+                            <stop offset="1" stop-color="#F24A37"></stop>
+                            </linearGradient>
+                            <linearGradient id="paint8_linear" x1="226.06" y1="620.435" x2="262.34" y2="620.435" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#D23274"></stop>
+                            <stop offset="1" stop-color="#F24A37"></stop>
+                            </linearGradient>
+                            <linearGradient id="paint9_linear" x1="494.44" y1="183.535" x2="526.14" y2="183.535" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#D23274"></stop>
+                            <stop offset="1" stop-color="#F24A37"></stop>
+                            </linearGradient>
+                            <linearGradient id="paint10_linear" x1="652.44" y1="447.885" x2="670.608" y2="447.885" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#D23274"></stop>
+                            <stop offset="1" stop-color="#F24A37"></stop>
+                            </linearGradient>
+                            <linearGradient id="paint11_linear" x1="636.438" y1="448.87" x2="676.474" y2="448.87" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#D23274"></stop>
+                            <stop offset="1" stop-color="#F24A37"></stop>
+                            </linearGradient>
+                            <linearGradient id="paint12_linear" x1="367.33" y1="536.785" x2="377.33" y2="536.785" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#D23274"></stop>
+                            <stop offset="1" stop-color="#F24A37"></stop>
+                            </linearGradient>
+                            <linearGradient id="paint13_linear" x1="353.33" y1="536.785" x2="363.33" y2="536.785" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#D23274"></stop>
+                            <stop offset="1" stop-color="#F24A37"></stop>
+                            </linearGradient>
+                            <linearGradient id="paint14_linear" x1="347.33" y1="534.861" x2="383.334" y2="534.861" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#D23274"></stop>
+                            <stop offset="1" stop-color="#F24A37"></stop>
+                            </linearGradient>
+                            <linearGradient id="paint15_linear" x1="458.935" y1="44.983" x2="503.908" y2="44.983" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#D23274"></stop>
+                            <stop offset="1" stop-color="#F24A37"></stop>
+                            </linearGradient>
+                            <linearGradient id="paint16_linear" x1="141.544" y1="328.728" x2="177.204" y2="328.728" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#D23274"></stop>
+                            <stop offset="1" stop-color="#F24A37"></stop>
+                            </linearGradient>
+                            <linearGradient id="paint17_linear" x1="148.81" y1="320.885" x2="155.55" y2="320.885" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#D23274"></stop>
+                            <stop offset="1" stop-color="#F24A37"></stop>
+                            </linearGradient>
+                            <linearGradient id="paint18_linear" x1="347" y1="116.988" x2="385.045" y2="116.988" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#D23274"></stop>
+                            <stop offset="1" stop-color="#F24A37"></stop>
+                            </linearGradient>
+                            <linearGradient id="paint19_linear" x1="201.43" y1="183.885" x2="237.43" y2="183.885" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#D23274"></stop>
+                            <stop offset="1" stop-color="#F24A37"></stop>
+                            </linearGradient>
+                            <linearGradient id="paint20_linear" x1="55.44" y1="207.772" x2="91.1081" y2="207.772" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#D23274"></stop>
+                            <stop offset="1" stop-color="#F24A37"></stop>
+                            </linearGradient>
+                            <linearGradient id="paint21_linear" x1="638.84" y1="208.085" x2="673.84" y2="208.085" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#D23274"></stop>
+                            <stop offset="1" stop-color="#F24A37"></stop>
+                            </linearGradient>
+                            <linearGradient id="paint22_linear" x1="207.27" y1="483.435" x2="217.57" y2="483.435" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#D23274"></stop>
+                            <stop offset="1" stop-color="#F24A37"></stop>
+                            </linearGradient>
+                            <linearGradient id="paint23_linear" x1="222.04" y1="483.435" x2="232.37" y2="483.435" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#D23274"></stop>
+                            <stop offset="1" stop-color="#F24A37"></stop>
+                            </linearGradient>
+                            <linearGradient id="paint24_linear" x1="213.148" y1="463.496" x2="226.47" y2="463.496" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#D23274"></stop>
+                            <stop offset="1" stop-color="#F24A37"></stop>
+                            </linearGradient>
+                            <linearGradient id="paint25_linear" x1="479.984" y1="483.008" x2="522.034" y2="483.008" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#D23274"></stop>
+                            <stop offset="1" stop-color="#F24A37"></stop>
+                            </linearGradient>
+                            <clipPath id="clip0">
+                            <rect width="720.1" height="719.9" fill="white"></rect>
+                            </clipPath>
+                            </defs>
+                            </svg>                           
+
+                        <div id = "modulesPopUp-containerId" class="modulesPopUp-container">
+                            <div class="modulesPopUp-closebutton" >
+                                <img src="./asserts/4_close.png" onclick="modulesPopupClose(this)"/>
+                            </div>
+                            <div class="modulesPopUp-heading">
+                                <p id="modulesPopUp-heading"> 
+                                    Desktop  
+                                </p>
+                            </div>
+                            <div class="modulesPopUp-content">
+                                <p id="modulesPopup-content"> 
+                                    The desktop automation accelerator module is designed to vivify desktop automation. Most legacy applications are desktop based and automation around this is a tiring task, with significant costs involved. The desktop automation accelerator module ruptures this myth and nurtures the development of desktop applications by supporting opensource frameworks such as Microsoft WinAppDriver , UI Automation, Sikuli ,AutoIT library, as well as licenced SmartBear TestLeft.
+                                </p>
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="section4">
+                <div class="sec4-content">
+                    <div class="heading">
+                        <h3><b>BUSINESS VALUE</b></h3>
+                    </div>
+                    <div class="sec4row list1">
+                        <div data-aos="flip-left" class="shell list1-sub1">
+                            <div class="shell_highlight">
+                            </div>
+                            <div class="image">
+                                <img class="devops" src="./asserts/5_Devops@web.svg" />
+                            </div>
+                            <div class="sub-heading">
+                                <b>DEVOPS </br>Integration</b>
+                            </div>
+                            <div class="definition">
+                                Up to 90% reduction in core execution effort & costs with unmanned daily automation runs using a CI/CD approach.
+                            </div>
+                        </div>
+                        <div data-aos="flip-right" class="shell list1-sub2">
+                            <div class="shell_highlight"></div>
+                            <div class="image">
+                                <img class="inSpirit" src="./asserts/5_InSpirit@web.svg" />
+                            </div>
+                            <div class="sub-heading">
+                                <b>In-Sprint Progression automation</b>
+                            </div>
+                            <div class="definition">
+                                All active projects from Mainframe application to Salesforce and PEGA. ( More than 90% Progressions test cases are automation in-sprint)
+                            </div>
+                        </div>
+                        <div data-aos="flip-left" class="shell list1-sub3">
+                            <div class="shell_highlight"></div>
+                            <div class="image">
+                                <img class="shiftLeft" src="./asserts/5_ShiftLeft@web.svg" />
+                            </div>
+                            <div class="sub-heading">
+                                <b>SHIFT-LEFT </br>Approach</b>
+                            </div>
+                            <div class="definition">
+                                Enablement of a shift-left approach, allowing for defects to be uncovered earlier in the release cycle, reducing overall project and release costs by 40%.
+                            </div>
+                        </div>
+                        <div data-aos="flip-right" class="shell list1-sub4">
+                            <div class="shell_highlight"></div>
+                            <div class="image">
+                                <img class="agile" src="./asserts/5_Agile@web.svg" />
+                            </div>
+                            <div class="sub-heading">
+                                <b>Enabler </br>for Agile</b>
+                            </div>
+                            <div class="definition">
+                                Up to 80% efficiency improvement in automation development using BDD approach as the business logic is separated from the application simplifying the development.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sec4row list2">
+                        <div data-aos="fade-up" class="shell list2-sub1">
+                            <div class="shell_highlight"></div>
+                            <div class="image">
+                                <img class="accelerate" src="./asserts/5_10+Accelerator@web.svg" />
+                            </div>
+                            <div class="sub-heading">
+                                <b>Native Cloud Integration</b>
+                            </div>
+                            <div class="definition">
+                                Designed to test applications built on different OS flavous with services packaged in containers, deployed as microservices and managed on elastic infrastructure through agile DevOps processes and continuous delivery workflows.
+                            </div>
+                        </div>
+                        <div data-aos="fade-up" class="shell list2-sub2">
+                            <div class="shell_highlight"></div>
+                            <div class="image">
+                                <img class="module" src="./asserts/5_Modular@web.svg" />
+                            </div>
+                            <div class="sub-heading">
+                                <b>Modular & Serverless </br>architecture</b>
+                            </div>
+                            <div class="definition">
+                                Architecture & Design of CodelessAuto drivers reduction in testing costs by not requiring extensive usage of expensive skilled test resources with deep automation engineering skills.
+                            </div>
+                        </div>
+                        <div data-aos="fade-up" class="shell list2-sub3">
+                            <div class="shell_highlight"></div>
+                            <div class="image">
+                                <img class="elk" src="./asserts/5_Elk@web.svg" />
+                            </div>
+                            <div class="sub-heading">
+                                <b>AI & Machine Learning</b>
+                            </div>
+                            <div class="definition">
+                                Extracting new insights from your Elastic search data is just button away. You don't have to any more algorithms. Machine Learning is baked right into Elastic search and Kibana for and experience that's both powerful and performant.
+                            </div>
+                        </div>
+                    </div>
+                    <div id="carouselExampleIndicators" class="carousel slide content1Slider" data-ride="carousel" data-touch="true">
+                        <ol class="carousel-indicators">
+                          <li class="carouselCircleIndicator" data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                          <li class="carouselCircleIndicator" data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                          <li class="carouselCircleIndicator" data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                          <li class="carouselCircleIndicator" data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="shell_highlight">
+                                </div>
+                                <div class="image">
+                                    <img class="devops" src="./asserts/5_Devops@web.svg" />
+                                </div>
+                                <div class="sub-heading">
+                                    <b>DEVOPS Integration</b>
+                                </div>
+                                <div class="definition">
+                                    Up to 90% reduction in core execution effort & costs with unmanned daily automation runs using a CI/CD approach.
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="shell_highlight"></div>
+                                <div class="image">
+                                    <img class="inSpirit" src="./asserts/5_InSpirit@web.svg" />
+                                </div>
+                                <div class="sub-heading">
+                                    <b>In-Sprint Progression automation</b>
+                                </div>
+                                <div class="definition">
+                                    All active projects from Mainframe application to Salesforce and PEGA. ( More than 90% Progressions test cases are automation in-sprint)
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="shell_highlight"></div>
+                                <div class="image">
+                                    <img class="shiftLeft" src="./asserts/5_ShiftLeft@web.svg" />
+                                </div>
+                                <div class="sub-heading">
+                                    <b>SHIFT-LEFT Approach</b>
+                                </div>
+                                <div class="definition">
+                                    Enablement of a shift-left approach, allowing for defects to be uncovered earlier in the release cycle, reducing overall project and release costs by 40%.
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="shell_highlight"></div>
+                                <div class="image">
+                                    <img class="agile" src="./asserts/5_Agile@web.svg" />
+                                </div>
+                                <div class="sub-heading">
+                                    <b>Enabler for Agile</b>
+                                </div>
+                                <div class="definition">
+                                    Up to 80% efficiency improvement in automation development using BDD approach as the business logic is separated from the application simplifying the development.
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Next</span>
+                        </a>
+                      </div>
+                    <div id="carouselExampleIndicators" class="carousel slide content2Slider" data-ride="carousel" data-touch="true">
+                        <ol class="carousel-indicators">
+                          <li class="carouselCircleIndicator" data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                          <li class="carouselCircleIndicator" data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                          <li class="carouselCircleIndicator" data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="shell_highlight"></div>
+                                <div class="image">
+                                    <img class="accelerate" src="./asserts/5_10+Accelerator@web.svg" />
+                                </div>
+                                <div class="sub-heading">
+                                    <b>Native Cloud Integration</b>
+                                </div>
+                                <div class="definition">
+                                    Designed to test applications built on different OS flavous with services packaged in containers, deployed as microservices and managed on elastic infrastructure through agile DevOps processes and continuous delivery workflows.
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="shell_highlight"></div>
+                                <div class="image">
+                                    <img class="module" src="./asserts/5_Modular@web.svg" />
+                                </div>
+                                <div class="sub-heading">
+                                    <b>Modular & Serverless architecture</b>
+                                </div>
+                                <div class="definition">
+                                    Architecture & Design of CodelessAuto drivers reduction in testing costs by not requiring extensive usage of expensive skilled test resources with deep automation engineering skills.
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="shell_highlight"></div>
+                                <div class="image">
+                                    <img class="elk" src="./asserts/5_Elk@web.svg" />
+                                </div>
+                                <div class="sub-heading">
+                                    <b>AI & Machine Learning</b>
+                                </div>
+                                <div class="definition">
+                                    Extracting new insights from your Elastic search data is just button away. You don't have to any more algorithms. Machine Learning is baked right into Elastic search and Kibana for and experience that's both powerful and performant.
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Next</span>
+                        </a>
+                      </div>
+                </div>
+            </div>
+
+            <div class="section5" id="devops">
+                <div class="sec5-container">
+                    <img class="desk sec5-background" src="./asserts/6_BG@web.png">
+                    <img class="mobile sec5-background" src="./asserts/m_6_BG.svg">
+                    <img class="devops" src="./asserts/m_6_Devops_old.svg" />
+                    <div class="sec5-subcontent">
+                        <div class="heading">
+                            <h3><b>DEVOPS</b></h3>
+                        </div>
+                        <div class="image">
+                            <div class="img-container">
+                                <img src="./asserts/6_Testing@web.svg" />
+                                <img src="./asserts/6_Fixing@web.svg" />
+                                <img src="./asserts/6_Cloud@web.svg" />
+                                <img src="./asserts/6_Reports@web.svg" />
+                            </div>
+                        </div>
+                        <div class="content">
+                            <div class="details">
+                                <div data-aos="zoom-in" class="mobile list imgContainer sub-list1">
+                                    <img src="./asserts/6_Testing@web.svg" />
+                                </div>
+                                <div data-aos="zoom-in" class="list textContainer sub-list1">
+                                    <div class="sub-heading">
+                                        <b class="testing">Test Automation</b>
+                                    </div>
+                                    <div class="description">
+                                        Automation Engineers, manual test engineers will write progression/ regression test cases by utilising the provided executable specification templates. For this there is no coding required. 
+                                    </div>
+                                </div>
+                                <div data-aos="zoom-in" class="mobile list imgContainer sub-list1">
+                                    <img src="./asserts/6_Fixing@web.svg" />
+                                </div>
+                                <div data-aos="zoom-in" class="list textContainer sub-list2">
+                                    <div class="sub-heading">
+                                        <b class="fixing">Refactor</b>
+                                    </div>
+                                    <div class="description">
+                                        Codeless Automation capability team maintain and enhance the core accelerator capability to make the source code from the automation engineers, manual test engineers as executables.
+                                    </div>
+                                </div>
+                                <div data-aos="zoom-in" class="mobile list imgContainer sub-list1">
+                                    <img src="./asserts/6_Cloud@web.svg" />
+                                </div>
+                                <div data-aos="zoom-in" class="list textContainer sub-list3">
+                                    <div class="sub-heading">
+                                        <b class="autoTC">Autonomous Execution</b>
+                                    </div>
+                                    <div class="description">
+                                        All tests are triggered from the orchestration layer via any CI/CD Server and the execution will run on cloud services (AWS, GCP & Azure) which can be scheduled or triggered. 
+                                    </div>
+                                </div>
+                                <div data-aos="zoom-in" class="mobile list imgContainer sub-list1">
+                                    <img src="./asserts/6_Reports@web.svg" />
+                                </div>
+                                <div data-aos="zoom-in" class="list textContainer sub-list4">
+                                    <div class="sub-heading">
+                                        <b class="ra  65255333333">Reports & Analytics</b>
+                                    </div>
+                                    <div class="description">
+                                        Test result reports can be reviewed via the reporting available through the orchestrator interface ELK which includes AI and ML. Detailed codeless automation accelerator reports are available as well.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottom-circle"></div>
+                </div>
+            </div>
+
+            <div class="section6" id="benifits">
+                <div class="sec6-content height1">
+                    <div class="heading">
+                        <h3><b> KEY BENEFITS</b></h3>
+                    </div>
+                    <div class="benifits benifits1">
+                        <div class="left-session list">
+                            <div data-aos="fade-down-right" class="content item">
+                                <div class="image">
+                                    <img src="./asserts/7_modular@web.png" />
+                                    <div class="hoverCircle">
+                                        <img src="./asserts/7_Mouse_Orbit_4_1@web.png" />
+                                    </div>
+                                </div>
+                                <div class="sub-heading">
+                                    <b>Modular & Serverless</br>Accelerator</b>
+                                </div>
+                                <div class="sec6-definition">
+                                    Allows to pick the Technology automation module needed to start test scripting. This gives full flexibility to customize the Accelerator according to needs.
+                                </div>
+                            </div>
+                            <div data-aos="fade-down-right" class="content item">
+                                <div class="image">
+                                    <img src="./asserts/7_Autonomous@web.png" />
+                                    <div class="hoverCircle">
+                                        <img src="./asserts/7_Mouse_Orbit_4_1@web.png" />
+                                    </div>
+                                </div>
+                                <div class="sub-heading">
+                                    <b>Autonomous Execution</b>
+                                </div>
+                                <div class="sec6-definition">
+                                    Seamless integration with CI/CD tools, allowing daily scheduled unmanned execution - drives cost savings, allows increased runs, thereby reducing the risk of incident leakage to prod.
+                                </div>
+                            </div>
+                            <div data-aos="fade-down-left" class="content item2">
+                                <div class="image">
+                                    <img src="./asserts/7_OS@web.png" />
+                                    <div class="hoverCircle">
+                                        <img src="./asserts/7_Mouse_Orbit_2@web.png" />
+                                    </div>
+                                </div>
+                                <div class="sub-heading">
+                                    <b>OS, platform and </br>environment agnostic</b>
+                                </div>
+                                <div class="sec6-definition">
+                                    Supports  execution of the same test cases across “n” number of environments and supports automation execution across Windows OS, MAC OS all Linux flavours. 
+                                </div>
+                            </div>
+                            <div data-aos="fade-down-left" class="content item2">
+                                <div class="image">
+                                    <img src="./asserts/7_Ease@web.png" />
+                                    <div class="hoverCircle">
+                                        <img src="./asserts/7_Mouse_Orbit_2@web.png" />
+                                    </div>
+                                </div>
+                                <div class="sub-heading">
+                                    <b>Ease of Transition</b>
+                                </div>
+                                <div class="sec6-definition">
+                                    Enables team members with basic technical skills to author automated test scripts without the need to write code, minimising the need to replace existing  functional testing workforce.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right-session list sec6-mobileList1">
+                            <div data-aos="fade-up-right" class="content item">
+                                <div class="image">
+                                    <img src="./asserts/7_Improved@web.png" />
+                                    <div class="hoverCircle">
+                                        <img src="./asserts/7_Mouse_Orbit_4_1@web.png" />
+                                    </div>
+                                </div>
+                                <div class="sub-heading">
+                                    <b>Improved Throughput</b>
+                                </div>
+                                <div class="sec6-definition">
+                                    Run tests 24x7x365 across application. To accelerates build and release cycles.
+                                </div>
+                            </div>
+                            <div data-aos="fade-up-right" class="content item">
+                                <div class="image">
+                                    <img src="./asserts/7_Reporting@web.png" />
+                                    <div class="hoverCircle">
+                                        <img src="./asserts/7_Mouse_Orbit_4_1@web.png" />
+                                    </div>
+                                </div>
+                                <div class="sub-heading">
+                                    <b>Reporting & Traceability</b>
+                                </div>
+                                <div class="sec6-definition">
+                                    Provides the latest reporting capabilities via easily understood and manageable dashboards, from Program Manager level to developer level.
+                                </div>
+                            </div>
+                            <div data-aos="fade-up-left" class="content item2">
+                                <div class="image">
+                                    <img src="./asserts/7_Flexible@web.png" />
+                                    <div class="hoverCircle">
+                                        <img src="./asserts/7_Mouse_Orbit_2@web.png" />
+                                    </div>
+                                </div>
+                                <div class="sub-heading">
+                                    <b>Flexible Architecture</b>
+                                </div>
+                                <div class="sec6-definition">
+                                    Provides scalable solutions. Software packages are modularised and new automation technology modules can be added as they become available.
+                                </div>
+                            </div>
+                            <div data-aos="fade-up-left" class="content item2">
+                                <div class="image">
+                                    <img src="./asserts/7_Full stack@web.png" />
+                                    <div class="hoverCircle">
+                                        <img src="./asserts/7_Mouse_Orbit_2@web.png" />
+                                    </div>
+                                </div>
+                                <div class="sub-heading">
+                                    <b>Full stack Automation</b>
+                                </div>
+                                <div class="sec6-definition">
+                                    Automate all systems under test including, Micro-Services, APIs, WEB UI, Desktop, Mobile and Apps, DB SQLs, IVR, Batch, Mainframe, Shell, File Transfers & Service Virtualization.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="section6" id="hidden">
+                <div class="sec6-content height2">
+                    <div class="benifits benifits2">
+                        <div class="left-session list sec6-mobileList2">
+                            <div data-aos="fade-up-right" class="content item">
+                                <div class="image">
+                                    <img src="./asserts/7_Improved@web.png" />
+                                    <div class="hoverCircle">
+                                        <img src="./asserts/7_Mouse_Orbit_4_1@web.png" />
+                                    </div>
+                                </div>
+                                <div class="sub-heading">
+                                    <b>Improved Throughput</b>
+                                </div>
+                                <div class="sec6-definition">
+                                    Run tests 24x7x365 across application. To accelerates build and release cycles.
+                                </div>
+                            </div>
+                            <div data-aos="fade-up-right" class="content item">
+                                <div class="image">
+                                    <img src="./asserts/7_Reporting@web.png" />
+                                    <div class="hoverCircle">
+                                        <img src="./asserts/7_Mouse_Orbit_4_1@web.png" />
+                                    </div>
+                                </div>
+                                <div class="sub-heading">
+                                    <b>Reporting & Traceability</b>
+                                </div>
+                                <div class="sec6-definition">
+                                    Provides the latest reporting capabilities via easily understood and manageable dashboards, from Program Manager level to developer level.
+                                </div>
+                            </div>
+                            <div data-aos="fade-up-left" class="content item2">
+                                <div class="image">
+                                    <img src="./asserts/7_Flexible@web.png" />
+                                    <div class="hoverCircle">
+                                        <img src="./asserts/7_Mouse_Orbit_2@web.png" />
+                                    </div>
+                                </div>
+                                <div class="sub-heading">
+                                    <b>Flexible Architecture</b>
+                                </div>
+                                <div class="sec6-definition">
+                                    Provides scalable solutions. Software packages are modularised and new automation technology modules can be added as they become available.
+                                </div>
+                            </div>
+                            <div data-aos="fade-up-left" class="content item2">
+                                <div class="image">
+                                    <img src="./asserts/7_Full stack@web.png" />
+                                    <div class="hoverCircle">
+                                        <img src="./asserts/7_Mouse_Orbit_2@web.png" />
+                                    </div>
+                                </div>
+                                <div class="sub-heading">
+                                    <b>Full stack Automation</b>
+                                </div>
+                                <div class="sec6-definition">
+                                    Automate all systems under test including, Micro-Services, APIs, WEB UI, Desktop, Mobile and Apps, DB SQLs, IVR, Batch, Mainframe, Shell, File Transfers & Service Virtualization.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="left-session list">
+                            <div data-aos="fade-down-right" class="content item">
+                                <div class="image">
+                                    <img src="./asserts/7_Shiftleft@web.png" />
+                                    <div class="hoverCircle">
+                                        <img src="./asserts/7_Mouse_Orbit_4_1@web.png" />
+                                    </div>
+                                </div>
+                                <div class="sub-heading">
+                                    <b>Shift Left Testing</b>
+                                </div>
+                                <div class="sec6-definition">
+                                    Utilising automated test cases in early test phases - development of non-UI (Unit, API, Database level) automation, allowing fully automated system testing and unit testing.
+                                </div>
+                            </div>
+                            <div data-aos="fade-down-right" class="content item">
+                                <div class="image">
+                                    <img src="./asserts/7_End_to_End@web.png" />
+                                    <div class="hoverCircle">
+                                        <img src="./asserts/7_Mouse_Orbit_4_1@web.png" />
+                                    </div>
+                                </div>
+                                <div class="sub-heading">
+                                    <b>End to End Testing</b>
+                                </div>
+                                <div class="sec6-definition">
+                                    Test automation platform for testing end-to-end service use cases across the application stack.
+                                </div>
+                            </div>
+                            <div data-aos="fade-down-left" class="content item2">
+                                <div class="image">
+                                    <img src="./asserts/7_Schedule@web.png" />
+                                    <div class="hoverCircle">
+                                        <img src="./asserts/7_Mouse_Orbit_2@web.png" />
+                                    </div>
+                                </div>
+                                <div class="sub-heading">
+                                    <b>Schedule Capabilities</b>
+                                </div>
+                                <div class="sec6-definition">
+                                    The scheduler feature permits 24/7 operation of testing resources.
+                                </div>
+                            </div>
+                            <div data-aos="fade-down-left" class="content item2">
+                                <div class="image">
+                                    <img src="./asserts/7_Agile@web.png" />
+                                    <div class="hoverCircle">
+                                        <img src="./asserts/7_Mouse_Orbit_2@web.png" />
+                                    </div>
+                                </div>
+                                <div class="sub-heading">
+                                    <b>Agile Enabler</b>
+                                </div>
+                                <div class="sec6-definition">
+                                    Used by engineering and QA departments when applications are in development, helps in adoption of new development methodologies.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right-session list">
+                            <div data-aos="fade-up-right" class="content item">
+                                <div class="image">
+                                    <img src="./asserts/7_Dev_Pipeline@web.png" />
+                                    <div class="hoverCircle">
+                                        <img src="./asserts/7_Mouse_Orbit_4_1@web.png" />
+                                    </div>
+                                </div>
+                                <div class="sub-heading">
+                                    <b>Development Pipeline </br>Support</b>
+                                </div>
+                                <div class="sec6-definition">
+                                    Supports integration with development pipelines that developers can integrate with Codeless Automation Accelerator seamlessly.
+                                </div>
+                            </div>
+                            <div data-aos="fade-up-right" class="content item">
+                                <div class="image">
+                                    <img src="./asserts/7_Performance@web.png" />
+                                    <div class="hoverCircle">
+                                        <img src="./asserts/7_Mouse_Orbit_4_1@web.png" />
+                                    </div>
+                                </div>
+                                <div class="sub-heading">
+                                    <b>Performance Metrics</b>
+                                </div>
+                                <div class="sec6-definition">
+                                    Frame accurate measurement of UI performance would give the confidence that the release is ready.
+                                </div>
+                            </div>
+                            <div data-aos="fade-up-left" class="content item2">
+                                <div class="image">
+                                    <img src="./asserts/7_High_Productivity@web.png" />
+                                    <div class="hoverCircle">
+                                        <img src="./asserts/7_Mouse_Orbit_2@web.png" />
+                                    </div>
+                                </div>
+                                <div class="sub-heading">
+                                    <b>Higher Productivity</b>
+                                </div>
+                                <div class="sec6-definition">
+                                    Increase test coverage not team size.
+                                </div>
+                            </div>
+                            <div data-aos="fade-up-left" class="content item2">
+                                <div class="image">
+                                    <img src="./asserts/7_Powerful Logging@web.png" />
+                                    <div class="hoverCircle">
+                                        <img src="./asserts/7_Mouse_Orbit_2@web.png" />
+                                    </div>
+                                </div>
+                                <div class="sub-heading">
+                                    <b>Powerful Logging</b>
+                                </div>
+                                <div class="sec6-definition">
+                                    Reporting capabilities allow to easily identify trends, problem areas, and performance regression.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list moblieList">
+                            <div class="content item hideList"></div>
+                            <div data-aos="fade-up-right" class="content item">
+                                <div class="image">
+                                    <img src="./asserts/7_Support@web.png" />
+                                    <div class="hoverCircle">
+                                        <img src="./asserts/7_Mouse_Orbit_4_1@web.png" />
+                                    </div>
+                                </div>
+                                <div class="sub-heading">
+                                    <b>Support Team</b>
+                                </div>
+                                <div class="sec6-definition">
+                                    Team of professional engineers providing excellent technical support to all customers across the globe.
+                                </div>
+                            </div>
+                            <div data-aos="fade-up-left" class="content item2">
+                                <div class="image">
+                                    <img src="./asserts/7_Smoth_Operator@web.png" />
+                                    <div class="hoverCircle">
+                                        <img src="./asserts/7_Mouse_Orbit_2@web.png" />
+                                    </div>
+                                </div>
+                                <div class="sub-heading">
+                                    <b>Smooth Operator</b>
+                                </div>
+                                <div class="sec6-definition">
+                                    Centralized management and administration to give access to more team members.
+                                </div>
+                            </div>
+                            <div class="content item desk hideList"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="loadmore" id="btnLoadMore">
+                <button class="button" onclick="loadMore()">LOAD MORE</button>
+            </div>
+            <div class="loadmore" id="btnShowLess">
+                <button class="button" onclick="showLess()">SHOW LESS</button>
+            </div>
+            <div id="contactUs" class="section7">
+                <div class="sec7-container">
+                    <img class="desk" src="./asserts/8_BG@web.png" />
+                    <img class="mobile" src="./asserts/m_8_BG.png" />
+                    <div class="sec7-content">
+                        <div class="heading">
+                            <h3><b>Ask Us Anything</b></h3>
+                        </div>
+                        <div class="content">
+                            <div class="left-session">
+                                <img src="./asserts/8_web.svg" />
+                            </div>
+                            <div class="right-session">
+                                <div class="form">
+                                    <input class="input_noerror" type="text" placeholder="Name" id="name" name="name" onclick="changeClassform(this)"
+                                    onmouseover="this.placeholder=''" onmouseleave=" myTimer=setTimeout(function(){document.getElementById('name').placeholder='Name'},300)">
+                                    <div id="form_name" class="form-slider"> 
+                                        <p>Name</p>
+                                    </div>
+                                </div>
+                                <div class="form">
+                                    <input class="input_noerror"  type="text" placeholder="Email" id="mailId" name="mailId" onclick="changeClassform(this)"
+                                    onmouseover="this.placeholder=''" onmouseleave=" myTimer=setTimeout(function(){document.getElementById('mailId').placeholder='Email'},300)">
+                                    <div id="form_mail" class="form-slider"> 
+                                        <p>Email</p>
+                                    </div>
+                                </div>
+                                <div class="form">
+                                    <input class="input_noerror" type="number" placeholder="Phone number" id="phone" name="phone" onclick="changeClassform(this)"
+                                   >
+                                    <div id="form_phone" class="form-slider"> 
+                                        <p>Phone</p>
+                                    </div>
+                                </div>
+                                <div class="form">
+                                    <input class="input_noerror" type="text" placeholder="Subject" id="subject" name="subject" onclick="changeClassform(this)"
+                                    onmouseover="this.placeholder=''" onmouseleave=" myTimer=setTimeout(function(){document.getElementById('subject').placeholder='Subject'},300)" >
+                                    <div id="form_subject" class="form-slider"> 
+                                        <p>Subject</p>
+                                    </div>
+                                </div>
+                                <div class="form">
+                                    <textarea class="input_noerror" id="msg" placeholder="Message" name="msg" rows="5"
+                                        cols="50" onclick="changeClassform(this)"  onmouseover="this.placeholder=''" onmouseleave=" myTimer=setTimeout(function(){document.getElementById('msg').placeholder='Messages'},300)"></textarea>
+                                        <div id="form_msg" class="form-slider"> 
+                                            <p>Message</p>
+                                        </div>
+                                </div>
+                                <div class="policy">
+                                    <input type="checkbox" id="policy" name="vehicle1">
+                                    I Agree to &nbsp;<a href="https://www.accenture.com/au-en/about/privacy-policy" target="_blank">Privacy Policy</a>
+                                </div>
+                                <div class="captcha">
+                                    <div class="g-recaptcha" data-sitekey="6Lc4Yf4UAAAAAJW04Jx33B9g7zdrW3JVEggBU0lw" data-type="image" ></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="send">
+                            <button id="sendBtn" class="button" onclick="sendEmail()">SEND</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section8">
+                <b>2020 Intelligent Enterprise Codeless Automation Accelerator&#169;</b>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="particles.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script type="text/javascript" src="app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+        });
+    </script>
+    <script src="function.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+</body>
+
+</html>
